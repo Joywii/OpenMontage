@@ -1,0 +1,320 @@
+{
+  "version": "1.0",
+  "project_id": "pi-dev-30s",
+  "pipeline_type": "animated-explainer",
+  "stage": "assets",
+  "status": "awaiting_human",
+  "timestamp": "2026-10-14T09:48:00.745525+00:00",
+  "checkpoint_policy": "guided",
+  "human_approval_required": true,
+  "human_approved": false,
+  "artifacts": {
+    "asset_manifest": {
+      "version": "1.0",
+      "assets": [
+        {
+          "id": "narration-s1",
+          "type": "audio",
+          "subtype": "narration",
+          "path": "assets/audio/narration_s1.mp3",
+          "source_tool": "doubao_tts",
+          "scene_id": "scene-1",
+          "provider": "doubao",
+          "model": "seed-tts-2.0",
+          "duration_seconds": 2.256,
+          "format": "mp3",
+          "cost_usd": 0.0002,
+          "voice_performance": {
+            "source_section_id": "s1",
+            "delivery_cues_applied": true,
+            "provider_text_used": true,
+            "provider_settings": {
+              "voice_id": "zh_female_vv_uranus_bigtts",
+              "speech_rate": 0,
+              "sample_rate": 24000,
+              "enable_timestamp": true
+            },
+            "sample_approved": true,
+            "sample_path": "assets/audio/doubao_sample_v1.mp3",
+            "review_notes": "Exact approved provider text and punctuation; timestamps match. Subjective pronunciation review pending."
+          }
+        },
+        {
+          "id": "narration-s2",
+          "type": "audio",
+          "subtype": "narration",
+          "path": "assets/audio/narration_s2.mp3",
+          "source_tool": "doubao_tts",
+          "scene_id": "scene-2",
+          "provider": "doubao",
+          "model": "seed-tts-2.0",
+          "duration_seconds": 6.672,
+          "format": "mp3",
+          "cost_usd": 0.0005,
+          "voice_performance": {
+            "source_section_id": "s2",
+            "delivery_cues_applied": true,
+            "provider_text_used": true,
+            "provider_settings": {
+              "voice_id": "zh_female_vv_uranus_bigtts",
+              "speech_rate": 0,
+              "sample_rate": 24000,
+              "enable_timestamp": true
+            },
+            "sample_approved": true,
+            "sample_path": "assets/audio/doubao_sample_v1.mp3",
+            "review_notes": "Fits 8-second slot; no time stretching. Punctuation controls delivery; unsupported emphasis tags not submitted."
+          }
+        },
+        {
+          "id": "narration-s3",
+          "type": "audio",
+          "subtype": "narration",
+          "path": "assets/audio/narration_s3.mp3",
+          "source_tool": "doubao_tts",
+          "scene_id": "scene-3",
+          "provider": "doubao",
+          "model": "seed-tts-2.0",
+          "duration_seconds": 7.224,
+          "format": "mp3",
+          "cost_usd": 0.0005,
+          "voice_performance": {
+            "source_section_id": "s3",
+            "delivery_cues_applied": true,
+            "provider_text_used": true,
+            "provider_settings": {
+              "voice_id": "zh_female_vv_uranus_bigtts",
+              "speech_rate": 0,
+              "sample_rate": 24000,
+              "enable_timestamp": true
+            },
+            "sample_approved": true,
+            "sample_path": "assets/audio/doubao_sample_v1.mp3",
+            "review_notes": "Fits 7.5-second slot; no time stretching. Returned sentence text matches request."
+          }
+        },
+        {
+          "id": "narration-s4",
+          "type": "audio",
+          "subtype": "narration",
+          "path": "assets/audio/narration_s4.mp3",
+          "source_tool": "doubao_tts",
+          "scene_id": "scene-4",
+          "provider": "doubao",
+          "model": "seed-tts-2.0",
+          "duration_seconds": 5.856,
+          "format": "mp3",
+          "cost_usd": 0.0004,
+          "voice_performance": {
+            "source_section_id": "s4",
+            "delivery_cues_applied": true,
+            "provider_text_used": true,
+            "provider_settings": {
+              "voice_id": "zh_female_vv_uranus_bigtts",
+              "speech_rate": 0,
+              "sample_rate": 24000,
+              "enable_timestamp": true
+            },
+            "sample_approved": true,
+            "sample_path": "assets/audio/doubao_sample_v1.mp3",
+            "review_notes": "Pi spoken as \u6d3e per approved pronunciation plan, restored to Pi in captions; subjective listening remains user review."
+          }
+        },
+        {
+          "id": "narration-s5",
+          "type": "audio",
+          "subtype": "narration",
+          "path": "assets/audio/narration_s5.mp3",
+          "source_tool": "doubao_tts",
+          "scene_id": "scene-5",
+          "provider": "doubao",
+          "model": "seed-tts-2.0",
+          "duration_seconds": 4.44,
+          "format": "mp3",
+          "cost_usd": 0.0003,
+          "voice_performance": {
+            "source_section_id": "s5",
+            "delivery_cues_applied": true,
+            "provider_text_used": true,
+            "provider_settings": {
+              "voice_id": "zh_female_vv_uranus_bigtts",
+              "speech_rate": 0,
+              "sample_rate": 24000,
+              "enable_timestamp": true
+            },
+            "sample_approved": true,
+            "sample_path": "assets/audio/doubao_sample_v1.mp3",
+            "review_notes": "Fits 5-second slot; URL not spoken; no rate change."
+          }
+        },
+        {
+          "id": "narration-preview",
+          "type": "audio",
+          "subtype": "review_preview",
+          "path": "assets/audio/narration_preview.mp3",
+          "source_tool": "ffmpeg",
+          "scene_id": "all",
+          "duration_seconds": 30,
+          "format": "mp3",
+          "cost_usd": 0,
+          "generation_summary": "Five generated sections placed at approved global starts and padded to 30 seconds. No music, no full video render. Decoded peak -8.8 dBFS; no clipping detected."
+        },
+        {
+          "id": "music-candidate",
+          "type": "audio",
+          "subtype": "music",
+          "path": "assets/music/background.mp3",
+          "source_tool": "pixabay_music",
+          "scene_id": "all",
+          "duration_seconds": 144.6,
+          "format": "mp3",
+          "provider": "pixabay_music",
+          "cost_usd": 0,
+          "license": "Pixabay Content License; Content ID registered; restrictions and source recorded in artifacts/music_license.json",
+          "original_url": "https://pixabay.com/music/ambient-technology-ambient-613800/",
+          "generation_summary": "Technology Ambient by VelarioMusic. Track page and license summary inspected; AI-generated label and Content ID disclosed. Candidate awaits asset approval; no external publishing."
+        },
+        {
+          "id": "soundtrack-preview",
+          "type": "audio",
+          "subtype": "review_preview",
+          "path": "assets/audio/soundtrack_preview.mp3",
+          "source_tool": "audio_mixer",
+          "scene_id": "all",
+          "duration_seconds": 30,
+          "format": "mp3",
+          "cost_usd": 0,
+          "generation_summary": "Local preview only: narration plus candidate music at 0.12 base gain, ducking enabled, -16 LUFS normalization target, last 0.6s fade after speech finishes. Decoded peak -1.8 dBFS. Subjective mix acceptance pending; no full video rendered."
+        },
+        {
+          "id": "bespoke-source",
+          "type": "animation",
+          "subtype": "remotion_atelier",
+          "path": "composition/Composition.tsx",
+          "source_tool": "manual_authoring",
+          "scene_id": "all",
+          "resolution": "1080x1920",
+          "duration_seconds": 30,
+          "cost_usd": 0,
+          "generation_summary": "Project-specific deterministic React composition; no stock creative components. Planned rendering uses video_compose atelier after assets approval."
+        },
+        {
+          "id": "still-scene-1",
+          "type": "image",
+          "subtype": "review_still",
+          "path": "snapshots/scene-1.png",
+          "source_tool": "remotion_still",
+          "scene_id": "scene-1",
+          "resolution": "1080x1920",
+          "format": "png",
+          "cost_usd": 0
+        },
+        {
+          "id": "still-scene-2",
+          "type": "image",
+          "subtype": "review_still",
+          "path": "snapshots/scene-2.png",
+          "source_tool": "remotion_still",
+          "scene_id": "scene-2",
+          "resolution": "1080x1920",
+          "format": "png",
+          "cost_usd": 0
+        },
+        {
+          "id": "still-scene-3",
+          "type": "image",
+          "subtype": "review_still",
+          "path": "snapshots/scene-3.png",
+          "source_tool": "remotion_still",
+          "scene_id": "scene-3",
+          "resolution": "1080x1920",
+          "format": "png",
+          "cost_usd": 0
+        },
+        {
+          "id": "still-scene-4",
+          "type": "image",
+          "subtype": "review_still",
+          "path": "snapshots/scene-4.png",
+          "source_tool": "remotion_still",
+          "scene_id": "scene-4",
+          "resolution": "1080x1920",
+          "format": "png",
+          "cost_usd": 0
+        },
+        {
+          "id": "still-scene-5",
+          "type": "image",
+          "subtype": "review_still",
+          "path": "snapshots/scene-5.png",
+          "source_tool": "remotion_still",
+          "scene_id": "scene-5",
+          "resolution": "1080x1920",
+          "format": "png",
+          "cost_usd": 0
+        }
+      ],
+      "total_cost_usd": 0.0019,
+      "metadata": {
+        "approval_status": "pending",
+        "budget_approved_usd": 0.05,
+        "project_tool_estimated_spend_usd": 0.0026,
+        "cost_basis": "Sum of tool estimates; prior sample 0.0007 included in project spend but not this asset batch. Supplier invoice usage not returned.",
+        "narration_duration_total_seconds": 26.448,
+        "narration_timing_ref": "artifacts/audio_timing.json",
+        "music_license_ref": "artifacts/music_license.json",
+        "visual_review_ref": "artifacts/visual_assets_report.json",
+        "decision_log_ref": "artifacts/decision_log.json",
+        "motion_source_required": true,
+        "stills_are_review_only": true,
+        "not_a_slideshow": "Final output uses animated composition source, not panning over these PNG stills.",
+        "music_status": "candidate awaiting user acceptance; source and license verified with Content ID caveat",
+        "generation_summary": {
+          "narration_sections": 5,
+          "scene_review_stills": 5,
+          "music_candidates": 1,
+          "ai_images_generated": 0,
+          "ai_video_clips_generated": 0
+        },
+        "review_status": "technical_and_representative_visual_checks_passed_awaiting_user_approval",
+        "review": {
+          "critical": 0,
+          "visual_checks": "Five scene PNGs inspected. Fixed closing safe-area issue and duplicate chat label; reviewed updated contact sheet.",
+          "audio_checks": "All five MP3s decode and fit their planned slots; provider text matches; preview peak below 0 dBFS. Subjective listening remains user review.",
+          "warnings": [
+            "Music candidate is Content ID registered and may trigger platform claims.",
+            "Full motion and final A/V sync QA occur after asset approval, not claimed complete here."
+          ]
+        },
+        "contact_sheet": "snapshots/contact-sheet.png"
+      }
+    }
+  },
+  "metadata": {
+    "decision_log_ref": "projects/pi-dev-30s/artifacts/decision_log.json",
+    "partial_progress": {
+      "completed_scene_ids": [
+        "scene-1",
+        "scene-2",
+        "scene-3",
+        "scene-4",
+        "scene-5"
+      ]
+    },
+    "review": {
+      "decision": "pass_with_warnings",
+      "critical": 0,
+      "warnings": [
+        "Subjective voice/music listening pending user review",
+        "Content ID registered candidate music",
+        "Motion playback and final A/V review require later full render"
+      ]
+    },
+    "cost_snapshot": {
+      "tool_estimated_spent_usd": 0.0026,
+      "approved_budget_usd": 0.05,
+      "estimated_compose_external_usd": 0,
+      "provider_invoice_verified": false
+    }
+  }
+}

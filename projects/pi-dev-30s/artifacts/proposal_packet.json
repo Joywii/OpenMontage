@@ -1,0 +1,71 @@
+{
+  "version": "1.0",
+  "concept_options": [
+    {"id":"c5","title":"用 Pi，构建你的 AI 工具","hook":"用 Pi，你能构建什么？","narrative_structure":"journey","visual_approach":"让一个 Pi 核心依次连接三个成果：带代码差异的专属编程助手、从仓库变化到报告的自动化流程、带工具执行状态的自定义聊天界面。终端只作短暂入口，三类应用占据主要时长。所有界面标注应用示意。","target_duration_seconds":30,"target_audience":"想把 AI 接入实际工具的中文开发者","target_platform":"generic","key_points":["用 Skills 和扩展定制编程助手，加入团队规范与专属工具","通过 CLI 构建代码审查、变更摘要等自动化流程，触发与调度由外部系统负责","通过 TypeScript SDK 或 RPC 构建自己的 AI 应用；Web UI、机器人渠道和权限需自行集成"],"core_message":"Pi 不只是拿来用的助手，也可以成为构建自有 AI 工具的基础。","cta":"从 pi.dev/docs/latest 开始构建","tone":"具体、面向构建者、不夸大开箱能力","grounded_in":["data_points[3]","metadata.build_focus_sources"],"why_this_works":"用户明确要求突出能构建的成果；三类应用分别对应官方 Extensions、CLI Integration 和 SDK，而非抽象功能列表。"},
+    {"id":"c1","title":"终端里的 AI 搭档","hook":"别只让 AI 给建议，让它动手。","narrative_structure":"problem_solution","visual_approach":"米白编辑式画面中的深色终端，输入任务后，文件与命令执行流程依次展开；最后变成可扩展的工作流。合成终端标注操作示意。","target_duration_seconds":30,"target_audience":"初次了解 Pi 的中文开发者","target_platform":"generic","key_points":["Pi 是可扩展的终端 AI Agent","能读取文件、执行命令、修改内容","可选择模型并添加 Skills 与扩展"],"core_message":"Pi 把目标变成终端里的实际操作。","cta":"访问 pi.dev/docs/latest","tone":"简洁、可信、有行动感","grounded_in":["data_points[0]","data_points[2]","data_points[3]"],"why_this_works":"以官方文档中的文件、命令和编辑能力建立具体认知，避免堆砌术语。"},
+    {"id":"c2","title":"从安装到第一条任务","hook":"第一次用 Pi，从一个工作目录开始。","narrative_structure":"tutorial","visual_approach":"四步终端流程：安装、选择目录、连接模型、输入任务；不演示未经验证的安装命令。","target_duration_seconds":30,"grounded_in":["data_points[1]"],"why_this_works":"官方快速开始提供明确流程，适合已经决定试用的开发者。"},
+    {"id":"c3","title":"模型可换，工作流自己定","hook":"换模型，不必换掉整套工作流。","narrative_structure":"comparison","visual_approach":"模型接入方式与任务工作流分层展示，Skills 和扩展以连接节点出现。","target_duration_seconds":30,"grounded_in":["data_points[2]","data_points[3]"],"why_this_works":"回应真实用户的模型选择问题，突出 Agent 与模型并非同一个概念。"},
+    {"id":"c4","title":"把 Pi 放进自己的应用","hook":"终端只是入口，Pi 也能成为应用的一部分。","narrative_structure":"journey","visual_approach":"从终端窗口拉出 TypeScript SDK 接口，再连接到自定义应用示意，不伪造实际产品界面。","target_duration_seconds":30,"grounded_in":["sources[0]"],"why_this_works":"官方概述列出 SDK 和自动化接口；适合需要构建应用的进阶观众，而不是首次认识产品的观众。"}
+  ],
+  "selected_concept":{"concept_id":"c5","rationale":"根据用户要求，将重点从功能介绍调整为用 Pi 可以构建的具体应用；完整方案仍待确认。","modifications":["主要时长用于专属编程助手、自动化工作流、自定义AI应用","保留30秒、原配音音色和语速、Remotion定制画面","不将可开发示例宣传为开箱即用功能"]},
+  "production_plan":{
+    "pipeline":"animated-explainer",
+    "playbook":"custom",
+    "renderer_family":"product-reveal",
+    "render_runtime":"remotion",
+    "composition_mode":"atelier",
+    "art_direction":"Build with Pi: retain warm ivory #F3F0E7, ink #18201C, leaf green #4B7958. One Pi core connects to three concrete outcomes: a tailored coding assistant with a diff, a repository-to-report workflow, and a custom chat application. Spend most screen time showing the outcomes, not isolated feature labels or a full-screen terminal. Use readable Chinese editorial type and short mono integration labels. All application UI is clearly illustrative, not official Pi product screenshots.",
+    "taste_profile":{
+      "design_read":"让构建者在30秒内看到三个自己能做出来的AI工具形态，能力只是支撑这些成果的连接层。",
+      "visual_variance":6,"motion_intensity":5,"information_density":3,
+      "palette_discipline":"米白、墨色、绿色，避免紫色渐变和无意义装饰。",
+      "layout_variation":"编程助手代码差异、仓库到报告的流程、聊天应用工具状态、三类成果汇聚收尾。",
+      "reference_strategy":"在资产制作前检查官方界面和品牌素材；每类场景生成一张本地预览静帧供审阅。",
+      "anti_patterns":["冒充真实操作录屏","宣称默认沙箱","无来源的速度或成本优势","纯字幕幻灯片","将需要开发集成的应用说成开箱即用","将JSON事件流说成必定返回结构化业务结果"],
+      "quality_gates":["演示标注操作示意","每屏一个主信息","字号在竖屏手机上可读","结尾网址停留至少两秒"]
+    },
+    "delivery_promise":{"promise_type":"motion_led","motion_required":true,"source_required":false,"tone_mode":"educational","quality_floor":"presentable","approved_fallback":null},
+    "voice_selection":{"provider":"doubao","voice_id":"zh_male_taocheng_uranus_bigtts","rationale":"用户确认小天2.0男声试听并授权完整配音，保留 seed-tts-2.0 和 speech_rate 0。","estimated_cost_usd":0.0019,"delivery_style":"年轻、清晰的普通话男声；以已批准的小天2.0样本为基准。","pacing_policy":"按语义分句；保留自然停顿，以文稿长度适配30秒，不擅自加速音轨。","sample_approval_required":false},
+    "decision_log_ref":"projects/pi-dev-30s/artifacts/decision_log.json",
+    "stages":[
+      {"stage":"research","tools":[],"approach":"已完成官方文档调研；禁止采用旧版无MCP说法。"},
+      {"stage":"proposal","tools":[],"approach":"确认整体视觉、配乐获取路径和预算。"},
+      {"stage":"script","tools":[],"approach":"以三类构建成果串联中文文稿：专属编程助手、自动化流程、自定义AI应用；按已确认样本语速估时，SDK等术语优先放画面。"},
+      {"stage":"scene_plan","tools":[],"approach":"细化30秒连续时间线，至少三类画面；短字幕随配音出现。"},
+      {"stage":"assets","tools":[{"tool_name":"doubao_tts","provider":"doubao","role":"整片中文配音和时间戳","available":true,"estimated_cost_usd":0.0023,"why_this_provider":"已实际验证并获得音色批准。"},{"tool_name":"pixabay_music","provider":"pixabay_music","role":"寻找轻电子背景音乐；选定曲目后核验许可和下载可用性","available":true,"estimated_cost_usd":0,"why_this_provider":"无本地曲库和音乐生成API；此搜索工具无需密钥。"}],"approach":"手写项目独有的 Remotion 终端与流程动画；无AI图片和视频生成调用。先保存场景审阅静帧。","fallback_if_unavailable":"配音、音乐或渲染不可用时报告并请用户选择，不静默替换。"},
+      {"stage":"edit","tools":[],"approach":"依据实际语音对齐画面与语义字幕；配乐在人声期间降低音量。"},
+      {"stage":"compose","tools":[{"tool_name":"video_compose","provider":"local","role":"Remotion atelier渲染1080x1920、30fps、30秒MP4","available":true,"estimated_cost_usd":0},{"tool_name":"audio_mixer","provider":"ffmpeg","role":"混音、淡入淡出、响度处理","available":true,"estimated_cost_usd":0}],"approach":"资产确认后渲染；验证时长、编码、音轨、关键帧、文字安全区。"},
+      {"stage":"publish","tools":[],"approach":"本地交付MP4与字幕，不上传外部平台。"}
+    ],
+    "quality_tradeoffs":[
+      {"tradeoff":"Atelier 定制 vs 模板拼装","recommendation":"定制，更贴合终端与文件工作流；耗费更多制作时间。","quality_impact":"避免通用文字卡片堆砌。"},
+      {"tradeoff":"Remotion vs HyperFrames vs FFmpeg","recommendation":"Remotion可用，适合确定性终端动画与字幕；HyperFrames包解析超时，当前不可用。FFmpeg适合后期处理，不作为动态图形主引擎。","quality_impact":"Remotion需手写React动画，制作时间高于简单剪接。"}
+    ],
+    "alternative_paths":[
+      {"description":"Remotion模板动画，沿用同款豆包配音和免费配乐搜索","total_cost_usd":0.003,"quality_level":"budget","what_changes":"API费用相同，人工编排更少，但视觉区分度较低。"},
+      {"description":"用户提供已授权配乐，保持定制画面和已确认配音","total_cost_usd":0.003,"quality_level":"standard","what_changes":"不依赖音乐网站搜索，需用户提供曲目。"}
+    ]
+  },
+  "cost_estimate":{
+    "total_estimated_usd":0.003,
+    "line_items":[
+      {"tool":"doubao_tts","operation":"已完成试听","quantity":1,"estimated_usd":0.0007,"notes":"本地工具估算，供应商未返回计费usage。"},
+      {"tool":"doubao_tts","operation":"约150字符完整旁白","quantity":1,"estimated_usd":0.0023,"notes":"估算而非平台现价承诺，实际账单以供应商为准。"},
+      {"tool":"pixabay_music","operation":"免费配乐搜索及授权核验","estimated_usd":0,"notes":"尚未选定曲目；无法获取时须用户决定替代方案。"},
+      {"tool":"video_compose + audio_mixer","operation":"本地渲染和混音","estimated_usd":0,"notes":"不含本地算力和助手使用费用。"}
+    ],
+    "budget_verdict":"no_budget_set"
+  },
+  "approval":{"status":"approved","approved_budget_usd":0.05,"user_notes":"用户确认方案、脚本与分镜，并回复好的批准最高0.05美元生成预算和完整旁白制作。具体音乐曲目许可需核验；后续资产审阅关卡未预授权。"},
+  "metadata":{
+    "media_profile":{"width":1080,"height":1920,"fps":30,"duration_seconds":30},
+    "proposed_generation_budget_usd":0.05,
+    "beat_outline":[{"seconds":"0-3","purpose":"提问：用Pi，你能构建什么？"},{"seconds":"3-10","purpose":"专属编程助手：团队规范、专属工具、代码差异"},{"seconds":"10-18","purpose":"自动化工作流：仓库变化到审查意见和变更报告"},{"seconds":"18-26","purpose":"自己的AI应用：通过SDK或RPC接入Web助手与聊天机器人，标注需集成"},{"seconds":"26-30","purpose":"Pi作为构建基础；文档入口与权限提示"}],
+    "build_focus_sources":[{"url":"https://pi.dev/docs/latest/extensions","supports":"TypeScript扩展可注册工具、命令、事件、模型及终端UI；专属编程助手是基于这些机制的应用方向。"},{"url":"https://pi.dev/docs/latest/cli-integration","supports":"Print适合脚本与一次性任务，JSON输出事件，RPC提供双向控制；代码审查和摘要工作流由外部流程集成。"},{"url":"https://pi.dev/docs/latest/sdk","supports":"TypeScript SDK在Node.js或Bun进程嵌入Agent、会话和工具；Web助手与聊天机器人是需自行构建外层的示例，并非官方内置渠道。"}],
+    "music_plan":{"status":"proposed_stock_search","provider":"pixabay_music","mood":"轻电子、无歌词、不抢旁白","approval_required":true,"license_check_required":true,"options":["Pixabay免费曲目搜索（推荐）","用户提供授权曲目","无配乐"],"music_generation":"0/5 configured","library":"0 tracks"},
+    "preflight_status":"degraded: default image_selector unavailable; proposed bespoke motion graphics does not need generated stills; user confirmation required",
+    "voice_sample":{"approved":true,"path":"projects/pi-dev-30s/assets/audio/male_tech_sample_v2.mp3","duration_seconds":8.4,"speech_rate":0},
+    "runtime_selection_basis":"Only Remotion currently available among animation composition runtimes; already disclosed to user. Proposal pending approval, not a silent runtime substitution.",
+    "review":{"decision":"pass_with_warnings","critical":0,"warnings":["Music track still to be acquired and license checked","Provider billing amount not verified","Official visual references must be inspected before asset authoring"]}
+  }
+}

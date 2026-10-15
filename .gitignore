@@ -26,7 +26,12 @@ pipeline/
 tests/qa/output/
 
 # Project workspaces (generated assets, renders — all regenerable)
-projects/
+projects/*
+!projects/pi-dev-30s/
+# Keep provider responses and restricted standalone music local.
+projects/pi-dev-30s/assets/audio/*.mp3.json
+projects/pi-dev-30s/assets/music/
+projects/pi-dev-30s/renders/.final_review_frames/
 
 # Corpus directories (downloaded stock clips, thumbnails, embeddings —
 # regenerable from source APIs via corpus_builder). Explicit rule even

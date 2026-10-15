@@ -1,0 +1,284 @@
+{
+  "version": "1.0",
+  "assets": [
+    {
+      "id": "narration-s1",
+      "type": "audio",
+      "subtype": "narration",
+      "path": "assets/audio/xiaotian_s1.mp3",
+      "source_tool": "doubao_tts",
+      "scene_id": "scene-1",
+      "provider": "doubao",
+      "model": "seed-tts-2.0",
+      "duration_seconds": 2.04,
+      "format": "mp3",
+      "cost_usd": 0.0002,
+      "voice_performance": {
+        "source_section_id": "s1",
+        "delivery_cues_applied": true,
+        "provider_text_used": true,
+        "provider_settings": {
+          "voice_id": "zh_male_taocheng_uranus_bigtts",
+          "speech_rate": 0,
+          "sample_rate": 24000,
+          "enable_timestamp": true
+        },
+        "sample_approved": true,
+        "sample_path": "assets/audio/male_tech_sample_v2.mp3",
+        "review_notes": "Approved Xiaotian sample settings and exact provider text. Decoded successfully; fits scene slot at natural speed. Shorter speech leaves visual reading time."
+      }
+    },
+    {
+      "id": "narration-s2",
+      "type": "audio",
+      "subtype": "narration",
+      "path": "assets/audio/xiaotian_s2.mp3",
+      "source_tool": "doubao_tts",
+      "scene_id": "scene-2",
+      "provider": "doubao",
+      "model": "seed-tts-2.0",
+      "duration_seconds": 6.024,
+      "format": "mp3",
+      "cost_usd": 0.0005,
+      "voice_performance": {
+        "source_section_id": "s2",
+        "delivery_cues_applied": true,
+        "provider_text_used": true,
+        "provider_settings": {
+          "voice_id": "zh_male_taocheng_uranus_bigtts",
+          "speech_rate": 0,
+          "sample_rate": 24000,
+          "enable_timestamp": true
+        },
+        "sample_approved": true,
+        "sample_path": "assets/audio/male_tech_sample_v2.mp3",
+        "review_notes": "Approved Xiaotian sample settings and exact provider text. Decoded successfully; fits scene slot at natural speed. Shorter speech leaves visual reading time."
+      }
+    },
+    {
+      "id": "narration-s3",
+      "type": "audio",
+      "subtype": "narration",
+      "path": "assets/audio/xiaotian_s3.mp3",
+      "source_tool": "doubao_tts",
+      "scene_id": "scene-3",
+      "provider": "doubao",
+      "model": "seed-tts-2.0",
+      "duration_seconds": 6.048,
+      "format": "mp3",
+      "cost_usd": 0.0005,
+      "voice_performance": {
+        "source_section_id": "s3",
+        "delivery_cues_applied": true,
+        "provider_text_used": true,
+        "provider_settings": {
+          "voice_id": "zh_male_taocheng_uranus_bigtts",
+          "speech_rate": 0,
+          "sample_rate": 24000,
+          "enable_timestamp": true
+        },
+        "sample_approved": true,
+        "sample_path": "assets/audio/male_tech_sample_v2.mp3",
+        "review_notes": "Approved Xiaotian sample settings and exact provider text. Decoded successfully; fits scene slot at natural speed. Shorter speech leaves visual reading time."
+      }
+    },
+    {
+      "id": "narration-s4",
+      "type": "audio",
+      "subtype": "narration",
+      "path": "assets/audio/xiaotian_s4.mp3",
+      "source_tool": "doubao_tts",
+      "scene_id": "scene-4",
+      "provider": "doubao",
+      "model": "seed-tts-2.0",
+      "duration_seconds": 4.848,
+      "format": "mp3",
+      "cost_usd": 0.0004,
+      "voice_performance": {
+        "source_section_id": "s4",
+        "delivery_cues_applied": true,
+        "provider_text_used": true,
+        "provider_settings": {
+          "voice_id": "zh_male_taocheng_uranus_bigtts",
+          "speech_rate": 0,
+          "sample_rate": 24000,
+          "enable_timestamp": true
+        },
+        "sample_approved": true,
+        "sample_path": "assets/audio/male_tech_sample_v2.mp3",
+        "review_notes": "Approved Xiaotian sample settings and exact provider text. Decoded successfully; fits scene slot at natural speed. Shorter speech leaves visual reading time."
+      }
+    },
+    {
+      "id": "narration-s5",
+      "type": "audio",
+      "subtype": "narration",
+      "path": "assets/audio/xiaotian_s5.mp3",
+      "source_tool": "doubao_tts",
+      "scene_id": "scene-5",
+      "provider": "doubao",
+      "model": "seed-tts-2.0",
+      "duration_seconds": 3.648,
+      "format": "mp3",
+      "cost_usd": 0.0003,
+      "voice_performance": {
+        "source_section_id": "s5",
+        "delivery_cues_applied": true,
+        "provider_text_used": true,
+        "provider_settings": {
+          "voice_id": "zh_male_taocheng_uranus_bigtts",
+          "speech_rate": 0,
+          "sample_rate": 24000,
+          "enable_timestamp": true
+        },
+        "sample_approved": true,
+        "sample_path": "assets/audio/male_tech_sample_v2.mp3",
+        "review_notes": "Approved Xiaotian sample settings and exact provider text. Decoded successfully; fits scene slot at natural speed. Shorter speech leaves visual reading time."
+      }
+    },
+    {
+      "id": "narration-preview",
+      "type": "audio",
+      "subtype": "review_preview",
+      "path": "assets/audio/xiaotian_narration_preview.mp3",
+      "source_tool": "ffmpeg",
+      "scene_id": "all",
+      "duration_seconds": 30,
+      "format": "mp3",
+      "cost_usd": 0,
+      "generation_summary": "Five Xiaotian sections at approved scene starts, padded to 30s; no stretching. Decoded peak -5.0 dBFS. Voice-only review, not full video."
+    },
+    {
+      "id": "music-candidate",
+      "type": "audio",
+      "subtype": "music",
+      "path": "assets/music/background.mp3",
+      "source_tool": "pixabay_music",
+      "scene_id": "all",
+      "duration_seconds": 144.6,
+      "format": "mp3",
+      "provider": "pixabay_music",
+      "cost_usd": 0,
+      "license": "Pixabay Content License; Content ID registered; restrictions and source recorded in artifacts/music_license.json",
+      "original_url": "https://pixabay.com/music/ambient-technology-ambient-613800/",
+      "generation_summary": "Technology Ambient by VelarioMusic. User accepted full soundtrack before composition. License and Content ID caveat retained; no external publishing."
+    },
+    {
+      "id": "soundtrack-preview",
+      "type": "audio",
+      "subtype": "review_preview",
+      "path": "assets/audio/xiaotian_soundtrack_preview.mp3",
+      "source_tool": "audio_mixer",
+      "scene_id": "all",
+      "duration_seconds": 30,
+      "format": "mp3",
+      "cost_usd": 0,
+      "generation_summary": "30s Xiaotian narration plus existing candidate music. Base music gain 0.12, ducking enabled, -16 LUFS normalization target, final 0.6s fade. Decoded peak -1.7 dBFS. Mix approved by user and embedded by Remotion in final video."
+    },
+    {
+      "id": "bespoke-source",
+      "type": "animation",
+      "subtype": "remotion_atelier",
+      "path": "composition/Composition.tsx",
+      "source_tool": "manual_authoring",
+      "scene_id": "all",
+      "resolution": "1080x1920",
+      "duration_seconds": 30,
+      "cost_usd": 0,
+      "generation_summary": "Project-specific deterministic React composition; no stock creative components. Planned rendering uses video_compose atelier after assets approval."
+    },
+    {
+      "id": "still-scene-1",
+      "type": "image",
+      "subtype": "review_still",
+      "path": "snapshots/scene-1.png",
+      "source_tool": "remotion_still",
+      "scene_id": "scene-1",
+      "resolution": "1080x1920",
+      "format": "png",
+      "cost_usd": 0
+    },
+    {
+      "id": "still-scene-2",
+      "type": "image",
+      "subtype": "review_still",
+      "path": "snapshots/scene-2.png",
+      "source_tool": "remotion_still",
+      "scene_id": "scene-2",
+      "resolution": "1080x1920",
+      "format": "png",
+      "cost_usd": 0
+    },
+    {
+      "id": "still-scene-3",
+      "type": "image",
+      "subtype": "review_still",
+      "path": "snapshots/scene-3.png",
+      "source_tool": "remotion_still",
+      "scene_id": "scene-3",
+      "resolution": "1080x1920",
+      "format": "png",
+      "cost_usd": 0
+    },
+    {
+      "id": "still-scene-4",
+      "type": "image",
+      "subtype": "review_still",
+      "path": "snapshots/scene-4.png",
+      "source_tool": "remotion_still",
+      "scene_id": "scene-4",
+      "resolution": "1080x1920",
+      "format": "png",
+      "cost_usd": 0
+    },
+    {
+      "id": "still-scene-5",
+      "type": "image",
+      "subtype": "review_still",
+      "path": "snapshots/scene-5.png",
+      "source_tool": "remotion_still",
+      "scene_id": "scene-5",
+      "resolution": "1080x1920",
+      "format": "png",
+      "cost_usd": 0
+    }
+  ],
+  "total_cost_usd": 0.0019,
+  "metadata": {
+    "approval_status": "approved",
+    "budget_approved_usd": 0.05,
+    "project_tool_estimated_spend_usd": 0.0061,
+    "cost_basis": "Current male batch tool estimate 0.0019; cumulative 0.0061 includes earlier female batch and all samples. Provider invoice not verified.",
+    "narration_duration_total_seconds": 22.608,
+    "narration_timing_ref": "artifacts/audio_timing.json",
+    "music_license_ref": "artifacts/music_license.json",
+    "visual_review_ref": "artifacts/visual_assets_report.json",
+    "decision_log_ref": "artifacts/decision_log.json",
+    "motion_source_required": true,
+    "stills_are_review_only": true,
+    "not_a_slideshow": "Final output uses animated composition source, not panning over these PNG stills.",
+    "music_status": "approved as part of reviewed soundtrack; Content ID caveat retained",
+    "generation_summary": {
+      "narration_sections": 5,
+      "scene_review_stills": 5,
+      "music_candidates": 1,
+      "ai_images_generated": 0,
+      "ai_video_clips_generated": 0
+    },
+    "review_status": "approved_for_composition",
+    "review": {
+      "critical": 0,
+      "visual_checks": "Five scene PNGs inspected. Fixed closing safe-area issue and duplicate chat label; reviewed updated contact sheet.",
+      "audio_checks": "All five male MP3s decode, match approved provider text and fit scene slots. Word timestamps rebuilt; 30s mix decodes with peak -1.7 dBFS. Sample voice/pace approved; complete mix awaits review.",
+      "warnings": [
+        "Music candidate is Content ID registered and may trigger platform claims.",
+        "Full motion and final A/V sync QA occur after asset approval, not claimed complete here.",
+        "Male speech is shorter than original slot estimates; preserve approved natural pace and scene lengths, leaving intentional visual reading time."
+      ]
+    },
+    "contact_sheet": "snapshots/contact-sheet.png",
+    "voice_sample_approved": true,
+    "voice_id": "zh_male_taocheng_uranus_bigtts",
+    "prior_manifest_ref": "history/asset_manifest_female.json"
+  }
+}

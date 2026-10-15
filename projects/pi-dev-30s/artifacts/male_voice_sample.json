@@ -1,0 +1,27 @@
+{
+  "version": "1.0",
+  "status": "awaiting_human",
+  "scope": "Voice sample only; full narration has not been replaced",
+  "tool": "doubao_tts",
+  "provider": "doubao",
+  "resource_id": "seed-tts-2.0",
+  "voice_id": "zh_male_cixingjieshuonan_uranus_bigtts",
+  "voice_name": "磁性解说男声2.0",
+  "source_sections": ["s4", "s5"],
+  "speech_rate": 0,
+  "sample_rate": 24000,
+  "path": "assets/audio/male_tech_sample_v1.mp3",
+  "metadata_path": "assets/audio/male_tech_sample_v1.mp3.json",
+  "duration_seconds": 12.216,
+  "cost_estimate_usd": 0.0008,
+  "cumulative_tool_estimate_usd": 0.0034,
+  "review": {
+    "decode": "passed",
+    "peak_dbfs": -8.6,
+    "text": "Returned sentence text matches approved provider text for s4 and s5",
+    "timing": "Word timestamps returned; separate section durations and 30-second fit must be rechecked after batch approval",
+    "subjective_listening": "Pending user review of voice, pace and pronunciation",
+    "preservation": "Female narration, visuals, script and music unchanged"
+  },
+  "approval_required": "Approve male voice sample before generating all five sections"
+}

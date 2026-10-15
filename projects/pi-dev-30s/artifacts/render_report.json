@@ -1,0 +1,41 @@
+{
+  "version": "1.0",
+  "outputs": [
+    {
+      "path": "renders/pi-dev-30s.mp4",
+      "format": "mp4",
+      "codec": "h264",
+      "audio_codec": "aac",
+      "resolution": "1080x1920",
+      "fps": 30,
+      "duration_seconds": 30.058667,
+      "file_size_bytes": 2329758,
+      "platform_target": "vertical short video"
+    }
+  ],
+  "render_time_seconds": 37.04,
+  "warnings": [
+    "Independent rendered-audio transcription unavailable; human listening remains recommended.",
+    "Music is Content ID registered and may trigger platform claims."
+  ],
+  "verification_notes": [
+    "Video stream exactly 30.000s / 900 frames; AAC container tail extends to 30.059s.",
+    "H.264 and stereo AAC decode successfully.",
+    "12 actual frames inspected across all five scenes and ending.",
+    "Captions are burned into the image via Remotion, not a separate subtitle stream.",
+    "Approved soundtrack matches output across all five scenes (correlations >0.993).",
+    "No runtime/provider change; bespoke Remotion source and public media retained."
+  ],
+  "render_grammar": "product-reveal",
+  "decision_log_ref": "artifacts/decision_log.json",
+  "final_review_ref": "artifacts/final_review.json",
+  "metadata": {
+    "render_runtime": "remotion",
+    "composition_mode": "atelier",
+    "crf": 18,
+    "concurrency": 1,
+    "voice": "Xiaotian 2.0",
+    "video_duration_seconds": 30,
+    "no_external_publishing": true
+  }
+}

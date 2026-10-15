@@ -1,0 +1,16 @@
+{
+  "title":"Technology Ambient",
+  "artist":"VelarioMusic",
+  "source_tool":"pixabay_music",
+  "source_url":"https://pixabay.com/music/ambient-technology-ambient-613800/",
+  "license_url":"https://pixabay.com/service/license-summary/",
+  "license":"Pixabay Content License",
+  "verification":"Read track page and license summary in browser on 2026-10-14. Track page states Free for use under the Pixabay Content License; summary allows free use, adaptation and no mandatory attribution, subject to prohibited uses and other rights.",
+  "restrictions":["Do not distribute the unmodified track standalone.","Do not imply author endorsement or use misleadingly.","Check other applicable rights before external publication."],
+  "content_id_registered":true,
+  "ai_generated_label":true,
+  "risk":"Automated platform copyright claims may occur despite the displayed license. Retain source/license references; no promise of claim-free publishing.",
+  "path":"assets/music/background.mp3",
+  "status":"candidate_for_asset_review",
+  "user_track_approval":false
+}

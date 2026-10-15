@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  "status": "approved",
+  "user_approval": "好的，生成吧",
+  "scope": "Second male sample only; full narration unchanged",
+  "revision_reason": "User requested a younger voice after finding magnetic male narrator too old-sounding",
+  "supersedes_sample": "artifacts/male_voice_sample.json",
+  "tool": "doubao_tts",
+  "provider": "doubao",
+  "resource_id": "seed-tts-2.0",
+  "voice_id": "zh_male_taocheng_uranus_bigtts",
+  "voice_name": "小天2.0",
+  "source_sections": ["s4", "s5"],
+  "speech_rate": 0,
+  "sample_rate": 24000,
+  "path": "assets/audio/male_tech_sample_v2.mp3",
+  "metadata_path": "assets/audio/male_tech_sample_v2.mp3.json",
+  "duration_seconds": 8.4,
+  "cost_estimate_usd": 0.0008,
+  "cumulative_tool_estimate_usd": 0.0042,
+  "review": {
+    "decode": "passed",
+    "peak_dbfs": -5.4,
+    "text": "Returned sentences match approved provider text for s4 and s5",
+    "timing": "Same text naturally takes 8.4 seconds versus 12.216 seconds for magnetic male. No rate adjustment or post-processing. User must assess pace as well as timbre.",
+    "subjective_listening": "User approved voice and pace, authorizing full narration generation",
+    "preservation": "All earlier samples, female narration, visuals, script and music preserved"
+  },
+  "approval_required": "Sample approved; complete asset mix remains subject to review"
+}

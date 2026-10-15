@@ -1,0 +1,63 @@
+{
+  "version": "1.0",
+  "status": "ready_for_assets_review",
+  "scope": "Visual source and five per-scene stills only. No full video render, checkpoint, narration generation or music call.",
+  "cost_usd": 0,
+  "renderer": {
+    "runtime": "remotion",
+    "composition_mode": "atelier",
+    "entry": "/Users/bytedance/MBoxWorkspace/OpenMontage/projects/pi-dev-30s/composition/index.tsx",
+    "composition_id": "PiBuild30",
+    "component_export": "PiBuildFilm",
+    "public_dir": "/Users/bytedance/MBoxWorkspace/OpenMontage/projects/pi-dev-30s/public",
+    "art_direction": "/Users/bytedance/MBoxWorkspace/OpenMontage/projects/pi-dev-30s/art-direction.md",
+    "width": 1080, "height": 1920, "fps": 30, "duration_frames": 900,
+    "scene_frames_end_exclusive": [[0,75],[75,315],[315,540],[540,750],[750,900]],
+    "props_contract": {
+      "captions": "Optional [{start,end,text}] in global seconds; s1 subtitles suppressed to avoid question duplication.",
+      "narration": "Optional [{src,start,duration,volume?}]. Relative src uses staticFile under public_dir. Supported alias for parent audio_timing.json.",
+      "audio": "Optional additional [{src,start,duration?,volume?}]. Combined with narration, so do not duplicate narration entries here.",
+      "defaults": "Empty captions/audio; sources compile without audio files. No music assumed."
+    }
+  },
+  "stills": [
+    {"scene_id":"scene-1","frame":55,"path":"/Users/bytedance/MBoxWorkspace/OpenMontage/projects/pi-dev-30s/snapshots/scene-1.png","captions":"Question itself is the caption"},
+    {"scene_id":"scene-2","frame":246,"path":"/Users/bytedance/MBoxWorkspace/OpenMontage/projects/pi-dev-30s/snapshots/scene-2.png","captions":"Measured audio_timing.json"},
+    {"scene_id":"scene-3","frame":500,"path":"/Users/bytedance/MBoxWorkspace/OpenMontage/projects/pi-dev-30s/snapshots/scene-3.png","captions":"Measured audio_timing.json"},
+    {"scene_id":"scene-4","frame":690,"path":"/Users/bytedance/MBoxWorkspace/OpenMontage/projects/pi-dev-30s/snapshots/scene-4.png","captions":"Measured audio_timing.json"},
+    {"scene_id":"scene-5","frame":840,"path":"/Users/bytedance/MBoxWorkspace/OpenMontage/projects/pi-dev-30s/snapshots/scene-5.png","captions":"Measured audio_timing.json"}
+  ],
+  "reference_verification": {
+    "url":"https://pi.dev/docs/latest",
+    "method":"Official page AX text and actual browser screenshot inspected using cua_repl on 2026-10-14.",
+    "observed":"Angular pixel mark in navigation, italic Pi heading, document claims for CLI/SDK/RPC and process-level permission model.",
+    "treatment":"Use ordinary typeset Pi, never reproduce logo or claim official UI. Our ivory/ink/leaf palette is independent. All constructed interfaces labeled 应用示意."
+  },
+  "fonts": {
+    "display":"Songti SC via /System/Library/Fonts/Supplemental/Songti.ttc",
+    "ui":"Heiti SC via /System/Library/Fonts/STHeiti Light.ttc and STHeiti Medium.ttc",
+    "code":"Menlo via /System/Library/Fonts/Menlo.ttc",
+    "pi_typesetting":"Baskerville via /System/Library/Fonts/Supplemental/Baskerville.ttc",
+    "usage":"Installed macOS fonts used locally for raster output; no font files downloaded, embedded or redistributed. Exact font EULAs were not independently audited. Same-host render avoids font substitution."
+  },
+  "verification": {
+    "typescript":"PASS: tsc --noEmit --skipLibCheck --jsx react --esModuleInterop --lib es2020,dom --moduleResolution node --target es2020 on staged project source.",
+    "bundle":"PASS: all five scenes rendered through Remotion still renderer.",
+    "visual_review":"Viewed all five PNGs. Main titles, code, report text, interface boundary disclosures, URL and measured captions are legible and unclipped. Revised s4 label to avoid caption duplication; s5 safety text moved to y=1630, ending1738 inside bottom safe area. Revised s4 and s5 re-rendered and viewed.",
+    "scene_distinctness":"PASS: question / code diff / repository-report flow / open conversation / foundation convergence. No repeated hub spine, no stock creative imports.",
+    "motion":"Frame-derived deterministic ease-out, sequential flow activation and packet movement, spring foundation settle. No wall-clock animation, random state, or CSS animation.",
+    "claims":"PASS: modifications awaiting review, external trigger disclosure, self-integration disclosure, process-permission safety note.",
+    "limitations":["Only representative stills reviewed, not complete motion playback; full-video QA belongs after assets approval.","Audio subjective quality and music license decision owned by parent.","All scene boundaries remain the approved original slots; no speed changes."]
+  },
+  "render_diagnostics": {
+    "node":"/opt/homebrew/opt/node@22/bin/node",
+    "cli":"node_modules/@remotion/cli/remotion-cli.js",
+    "working_directory":"/Users/bytedance/MBoxWorkspace/OpenMontage/remotion-composer",
+    "staged_entry":"projects/pi-dev-30s/composition/index.tsx",
+    "browser_executable":"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+    "chrome_mode":"chrome-for-testing",
+    "sandbox":"require_escalated was required to launch installed Chrome for local render due Crashpad permission denial in sandbox.",
+    "initial_failures":["Default headless-shell download failed DNS for storage.googleapis.com.","Installed current Chrome rejected old headless mode; --chrome-mode=chrome-for-testing solved mode mismatch.","Sandbox denied Chrome Crashpad launch; approved escalated still command succeeded."],
+    "source_of_truth":"Canonical source is projects/pi-dev-30s/composition; remotion-composer/projects/pi-dev-30s/composition is staging copy only. Do not modify shared rendering tools. Compose must still use video_compose atelier after gate approval."
+  }
+}

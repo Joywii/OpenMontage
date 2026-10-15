@@ -1,0 +1,60 @@
+{
+  "render_runtime": "remotion",
+  "cuts": [
+    {
+      "id": "cut-1",
+      "source": "composition/Composition.tsx",
+      "in_seconds": 0,
+      "out_seconds": 2.5,
+      "layer": "primary",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "reason": "Opening question with three outcome traces; exact title serves as opening subtitle."
+    },
+    {
+      "id": "cut-2",
+      "source": "composition/Composition.tsx",
+      "in_seconds": 2.5,
+      "out_seconds": 10.5,
+      "layer": "primary",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "reason": "Custom coding assistant: rules and skills feed a code diff awaiting review."
+    },
+    {
+      "id": "cut-3",
+      "source": "composition/Composition.tsx",
+      "in_seconds": 10.5,
+      "out_seconds": 18,
+      "layer": "primary",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "reason": "External scripts and CI trigger Pi CLI and generate review and change reports."
+    },
+    {
+      "id": "cut-4",
+      "source": "composition/Composition.tsx",
+      "in_seconds": 18,
+      "out_seconds": 25,
+      "layer": "primary",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "reason": "Custom app UI with SDK/RPC connection and integration disclaimer."
+    },
+    {
+      "id": "cut-5",
+      "source": "composition/Composition.tsx",
+      "in_seconds": 25,
+      "out_seconds": 30,
+      "layer": "primary",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "reason": "Three build outcomes converge on Pi foundation; docs URL held for four seconds."
+    }
+  ],
+  "audio": {
+    "narration": {
+      "src": "assets/audio/xiaotian_soundtrack_preview.wav"
+    }
+  }
+}

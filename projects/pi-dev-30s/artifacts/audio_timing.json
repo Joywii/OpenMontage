@@ -1,0 +1,35 @@
+{
+  "duration": 30,
+  "narration": [
+    {"src":"audio/xiaotian_s1.mp3","start":0,"duration":2.04},
+    {"src":"audio/xiaotian_s2.mp3","start":2.5,"duration":6.024},
+    {"src":"audio/xiaotian_s3.mp3","start":10.5,"duration":6.048},
+    {"src":"audio/xiaotian_s4.mp3","start":18,"duration":4.848},
+    {"src":"audio/xiaotian_s5.mp3","start":25,"duration":3.648}
+  ],
+  "captions": [
+    {"start":2.745,"end":3.565,"text":"加入团队规范"},
+    {"start":3.895,"end":5.035,"text":"专属技能和工具"},
+    {"start":5.435,"end":6.895,"text":"构建会按你的工作方式"},
+    {"start":6.895,"end":8.175,"text":"改代码的编程助手"},
+    {"start":10.775,"end":12.475,"text":"接入脚本和开发流水线"},
+    {"start":12.715,"end":13.615,"text":"自动审查代码"},
+    {"start":13.755,"end":14.475,"text":"汇总变更"},
+    {"start":14.805,"end":16.285,"text":"让重复工作交给流程"},
+    {"start":18.255,"end":19.655,"text":"还可以通过接口集成"},
+    {"start":19.795,"end":21.605,"text":"把 Pi 接进自己的网页助手"},
+    {"start":21.645,"end":22.615,"text":"或聊天机器人"},
+    {"start":25.255,"end":26.455,"text":"Pi 不只是助手"},
+    {"start":26.585,"end":28.415,"text":"更是你构建 AI 工具的基础"}
+  ],
+  "metadata": {
+    "basis":"Doubao returned word timestamps plus measured MP3 durations; not text-length estimates.",
+    "s1_caption":"Use the existing exact question title only; suppress duplicated subtitle.",
+    "provider_text_match":"All returned sentence text matches the approved provider_text after whitespace normalization. Pi is restored in captions from spoken 派.",
+    "audio_review":"Xiaotian 2.0 voice and pace approved in sample; all five replacement sections measured and text-checked. Complete mix awaits asset review.",
+    "voice_id":"zh_male_taocheng_uranus_bigtts",
+    "sample_path":"assets/audio/male_tech_sample_v2.mp3",
+    "total_speech_file_duration":22.608,
+    "speed_changed":false
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "version": "1.0",
+  "topic": "30-second Chinese introduction to Pi, grounded in https://pi.dev/docs/latest",
+  "research_date": "2026-10-14",
+  "research_summary": "Pi is an extensible terminal AI agent, not a particular model: give it a working folder and a goal, then it can inspect files, run commands, edit content and complete multi-step work. The strongest 30-second introduction should demonstrate that concrete loop, then show model choice and extensibility. Current official documentation and the Pi 1.0 announcement supersede prevalent four-tools/no-MCP narratives: 1.0 includes Codemode with native MCP. No speed, cost-saving or benchmark superiority claim was independently established. A safety qualifier is important because project trust is not an execution sandbox. Audience and platform were not specified; developer-oriented Chinese narration is a proposal assumption, not a confirmed user preference.",
+  "landscape": {
+    "existing_content": [
+      {
+        "title": "Pi Coding Agent: 4 Tools, a 150-Word System Prompt, No MCP",
+        "url": "https://felipefontoura.com/articles/pi-coding-agent/",
+        "source": "independent blog; search-index excerpt",
+        "angle": "Radical minimalism and transparency",
+        "what_it_covers": "Four-tool historical setup, short prompt, visible execution.",
+        "what_it_misses": "Its no-MCP framing conflicts with the official Pi 1.0 announcement. Do not reuse it as a current product claim.",
+        "engagement_signal": "Not verified; no view count used."
+      },
+      {
+        "title": "pi Coding Agent Review 2026: 4 Tools vs Claude Code, Tested",
+        "url": "https://www.heyuan110.com/posts/ai/2026-09-06-pi-coding-agent-review/",
+        "source": "independent blog; search-index excerpt",
+        "angle": "Personal comparison with Claude Code",
+        "what_it_covers": "A September 2026 personal workflow test and harness customization.",
+        "what_it_misses": "Predates the 1.0 feature change; one author's token test is not a general performance guarantee.",
+        "engagement_signal": "Not verified; no view count used."
+      },
+      {
+        "title": "How to Use Pi Coding Agent 1.0: Install, Connect a Model, and Run Your First Task",
+        "url": "https://docs.kanaries.net/topics/AICoding/pi-coding-agent-how-to-use",
+        "source": "tutorial; search-index excerpt",
+        "angle": "Installation and first task",
+        "what_it_covers": "Pi 1.0 setup, model connection and first-run workflow.",
+        "what_it_misses": "An installation guide is longer and less emotionally immediate than a 30-second outcome-led introduction.",
+        "engagement_signal": "Not verified; no view count used."
+      }
+    ],
+    "saturated_angles": ["Historical four-tools/no-MCP minimalism", "Generic best coding agent comparison", "Long installation walkthrough"],
+    "underserved_gaps": ["A concise Chinese explanation of the current product that separates agent from model and shows a concrete file-to-result workflow", "Extensibility explained as practical workflow adaptation rather than an unqualified feature list"]
+  },
+  "trending": {
+    "recent_developments": [{"headline": "Official Pi 1.0 announcement adds Codemode/native MCP, virtual-model extensions and deferred tool loading", "url": "https://earendil.com/posts/pi-1-0/", "date": "2026-10-01", "relevance": "Avoid obsolete no-MCP positioning; introduction can be current without making the release date its only hook."}],
+    "active_discussions": [{"platform": "Hacker News", "topic_or_url": "https://news.ycombinator.com/item?id=48991997", "sentiment": "Practical uncertainty over model choice, responsiveness and subscription/API access", "key_quotes": []}],
+    "timeliness_window": "evergreen core; weeks for Pi 1.0 news framing"
+  },
+  "data_points": [
+    {"claim": "Pi works in the terminal and can inspect files, run commands, edit content and work through multi-step tasks from a goal and working folder.", "source_url": "https://pi.dev/docs/latest", "source_name": "Pi official overview", "credibility": "primary_source", "surprise_factor": "notable", "usable_as": "script_anchor"},
+    {"claim": "The official quickstart uses four setup stages: install, start in a working folder, choose a model, and give Pi a task. Sessions save automatically and pi --continue resumes the latest session for that folder.", "source_url": "https://pi.dev/docs/latest/quickstart", "source_name": "Pi official quickstart", "credibility": "primary_source", "surprise_factor": "expected", "usable_as": "script_anchor"},
+    {"claim": "Model connections include supported subscriptions, API keys, local GGUF models through a llama.cpp router, and compatible endpoints; /model selects among available authenticated models.", "source_url": "https://pi.dev/docs/latest/models", "source_name": "Pi official model guide", "credibility": "primary_source", "surprise_factor": "notable", "usable_as": "hook"},
+    {"claim": "TypeScript extensions can add executable tools, commands, event handlers, providers, session state and terminal UI; instructions alone are handled by lighter customization mechanisms.", "source_url": "https://pi.dev/docs/latest/extensions", "source_name": "Pi official extension guide", "credibility": "primary_source", "surprise_factor": "notable", "usable_as": "closing_punch"},
+    {"claim": "Pi 1.0 includes Codemode with native MCP support, virtual-model extension support, deferred tool loading and a full-screen default interface.", "source_url": "https://earendil.com/posts/pi-1-0/", "source_name": "Earendil official Pi 1.0 announcement", "credibility": "primary_source", "surprise_factor": "counterintuitive", "usable_as": "hook"},
+    {"claim": "Pi tools and extensions run with the permissions of the Pi process; project trust does not sandbox tool execution and Pi does not request approval before every tool call.", "source_url": "https://pi.dev/docs/latest/security", "source_name": "Pi official security guide", "credibility": "primary_source", "surprise_factor": "notable", "usable_as": "script_anchor"}
+  ],
+  "audience_insights": {
+    "common_questions": [
+      "Which model should I use with Pi? Actual Ask HN thread title, paraphrased: https://news.ycombinator.com/item?id=48991997",
+      "Do I need to pay for the Opus API rather than use a subscription? Actual follow-up question, paraphrased; supported access varies and must be checked: https://news.ycombinator.com/item?id=48991997",
+      "Does Pi mean an LLM or Raspberry Pi hardware? Actual naming confusion, paraphrased: https://news.ycombinator.com/item?id=47852863"
+    ],
+    "misconceptions": [
+      {"myth": "Pi is a model or Raspberry Pi hardware.", "reality": "This Pi is an extensible terminal agent that connects to a model provider.", "source": "https://pi.dev/docs/latest"},
+      {"myth": "Pi still has no native MCP support.", "reality": "Official Pi 1.0 explicitly introduces Codemode with native MCP support; older tutorials are historical.", "source": "https://earendil.com/posts/pi-1-0/"},
+      {"myth": "Trusting a project or selecting a working folder confines execution to that folder.", "reality": "Project trust governs resource loading, not an OS sandbox. Use actual isolation for untrusted work.", "source": "https://pi.dev/docs/latest/security"}
+    ],
+    "knowledge_level": "Assumed target: developers who recognize a terminal and AI chat but may not distinguish a model from an extensible agent harness. This is a creative assumption pending proposal approval.",
+    "pain_points": ["Choosing models and understanding API/subscription access", "Tutorials that no longer match current capabilities", "Retaining control and reviewing automatically executed changes"]
+  },
+  "angles_discovered": [
+    {"name": "从一句目标 到终端里的实际结果", "hook": "别只让 AI 给建议，让它在你的工作目录里动手。", "type": "evergreen", "why_now": "Official overview and quickstart show inspect-command-edit workflows, including code, notes and CSV comparisons.", "grounded_in": ["data_points[0]", "data_points[1]"]},
+    {"name": "模型由你选 工作方式也由你定", "hook": "换一个模型，不必换掉整套工作流。", "type": "evergreen", "why_now": "Current model guide supports multiple connection types and the extension guide exposes workflow customization.", "grounded_in": ["data_points[2]", "data_points[3]", "audience_insights.common_questions[0]"]},
+    {"name": "极简 不等于 功能停在过去", "hook": "你听说 Pi 没有 MCP？那已经不是现在的 Pi。", "type": "trending", "why_now": "Pi 1.0 official announcement introduces native MCP via Codemode while older prominent articles still emphasize no MCP.", "grounded_in": ["data_points[4]", "landscape.existing_content[0]"]},
+    {"name": "不只会写代码的 终端工作伙伴", "hook": "一个终端，也能整理笔记、比较数据、完成多步任务。", "type": "contrarian", "why_now": "Official overview explicitly extends beyond coding; quickstart includes meeting-note and CSV examples, unlike coding-only comparison coverage.", "grounded_in": ["data_points[0]", "data_points[1]", "landscape.underserved_gaps[0]"]}
+  ],
+  "visual_references": [
+    {"description": "Official quickstart terminal screenshot and four-stage workflow", "url": "https://pi.dev/docs/latest/quickstart", "what_works": "An identifiable input prompt, visible execution and an output file provide a concrete demonstration. Any synthetic reconstruction must be marked as illustrative rather than real execution."},
+    {"description": "Official model guide connection table", "url": "https://pi.dev/docs/latest/models", "what_works": "Different connection types can be simplified into a restrained provider-choice visual without claiming every subscription is supported."}
+  ],
+  "sources": [
+    {"url": "https://pi.dev/docs/latest", "title": "Pi official overview", "used_for": "Product identity and scope", "reliability": "primary"},
+    {"url": "https://pi.dev/docs/latest/quickstart", "title": "Pi Quickstart", "used_for": "Workflow, example tasks, installation and persistence", "reliability": "primary"},
+    {"url": "https://pi.dev/docs/latest/models", "title": "Choose a Model", "used_for": "Provider connection and model selection", "reliability": "primary"},
+    {"url": "https://pi.dev/docs/latest/extensions", "title": "Pi Extensions", "used_for": "Extensibility and permission scope", "reliability": "primary"},
+    {"url": "https://pi.dev/docs/latest/security", "title": "Run Pi safely", "used_for": "Safety caveats", "reliability": "primary"},
+    {"url": "https://earendil.com/posts/pi-1-0/", "title": "Pi 1.0", "used_for": "Recent release and obsolete-claim correction", "reliability": "primary"},
+    {"url": "https://news.ycombinator.com/item?id=48991997", "title": "Ask HN: Which model do you use with Pi coding agent?", "used_for": "Two real audience questions", "reliability": "anecdotal"},
+    {"url": "https://news.ycombinator.com/item?id=47852863", "title": "HN discussion of Pi naming ambiguity", "used_for": "Audience identity confusion", "reliability": "anecdotal"},
+    {"url": "https://felipefontoura.com/articles/pi-coding-agent/", "title": "Pi Coding Agent: 4 Tools, a 150-Word System Prompt, No MCP", "used_for": "Landscape only; historical claims not adopted", "reliability": "anecdotal"},
+    {"url": "https://www.heyuan110.com/posts/ai/2026-09-06-pi-coding-agent-review/", "title": "pi Coding Agent Review 2026", "used_for": "Landscape only; no performance claims adopted", "reliability": "anecdotal"},
+    {"url": "https://docs.kanaries.net/topics/AICoding/pi-coding-agent-how-to-use", "title": "How to Use Pi Coding Agent 1.0", "used_for": "Landscape only", "reliability": "secondary"}
+  ],
+  "metadata": {
+    "duration_seconds": 30,
+    "language": "zh-CN",
+    "searches_executed": 12,
+    "search_queries": ["site:youtube.com pi coding agent explained", "pi.dev guide tutorial 2026", "pi.dev October 2026", "best terminal coding agents 2026 pi", "Pi 1.0 announcement Earendil October 2026", "pi coding agent site:reddit.com help confused", "pi coding agent site:news.ycombinator.com", "pi.dev benchmark statistics 2026", "pi coding agent why local site:reddit.com", "Pi coding agent MCP four tools 2026", "pi.dev tutorial site:youtube.com", "pi coding agent how model site:reddit.com"],
+    "limitations": ["No independently reproducible speed, token-cost, adoption or quality benchmark established; omit comparative performance metrics.", "No verified YouTube engagement data; landscape entries are text tutorials rather than inferred top videos.", "Three actual audience questions come from two HN discussions, not a representative survey.", "Secondary landscape entries were surveyed via search excerpts; technical claims rely only on opened official sources.", "Pi Durable is a separate experimental package; do not conflate it with the core terminal product.", "No media generated and no paid calls performed."]
+  }
+}

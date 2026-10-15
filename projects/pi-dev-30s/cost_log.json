@@ -1,0 +1,151 @@
+{
+  "version": "1.0",
+  "budget_total_usd": 0.05,
+  "budget_reserved_usd": 0,
+  "budget_spent_usd": 0.0061,
+  "approved_tools": [
+    "doubao_tts"
+  ],
+  "entries": [
+    {
+      "id": "63ee21b5d575",
+      "tool": "doubao_tts",
+      "operation": "user-approved single voice sample",
+      "status": "failed",
+      "estimated_usd": 0.0007,
+      "reserved_usd": 0.0,
+      "actual_usd": 0,
+      "timestamp": "2026-10-14T09:01:54.863898+00:00"
+    },
+    {
+      "id": "7800e2a480e4",
+      "tool": "doubao_tts",
+      "operation": "same approved sample after DNS-blocked attempt",
+      "status": "completed",
+      "estimated_usd": 0.0007,
+      "reserved_usd": 0.0,
+      "actual_usd": 0.0007,
+      "timestamp": "2026-10-14T09:02:29.926840+00:00"
+    },
+    {
+      "id": "b91d6275f611",
+      "tool": "doubao_tts",
+      "operation": "approved narration s1",
+      "status": "completed",
+      "estimated_usd": 0.0002,
+      "reserved_usd": 0.0,
+      "actual_usd": 0.0002,
+      "timestamp": "2026-10-14T09:38:21.788823+00:00"
+    },
+    {
+      "id": "2f2214466dbd",
+      "tool": "doubao_tts",
+      "operation": "approved narration s2",
+      "status": "completed",
+      "estimated_usd": 0.0005,
+      "reserved_usd": 0.0,
+      "actual_usd": 0.0005,
+      "timestamp": "2026-10-14T09:38:24.652625+00:00"
+    },
+    {
+      "id": "b8962a91aa9f",
+      "tool": "doubao_tts",
+      "operation": "approved narration s3",
+      "status": "completed",
+      "estimated_usd": 0.0005,
+      "reserved_usd": 0.0,
+      "actual_usd": 0.0005,
+      "timestamp": "2026-10-14T09:38:27.471031+00:00"
+    },
+    {
+      "id": "0629d0293076",
+      "tool": "doubao_tts",
+      "operation": "approved narration s4",
+      "status": "completed",
+      "estimated_usd": 0.0004,
+      "reserved_usd": 0.0,
+      "actual_usd": 0.0004,
+      "timestamp": "2026-10-14T09:38:32.581337+00:00"
+    },
+    {
+      "id": "730d43dd34fb",
+      "tool": "doubao_tts",
+      "operation": "approved narration s5",
+      "status": "completed",
+      "estimated_usd": 0.0003,
+      "reserved_usd": 0.0,
+      "actual_usd": 0.0003,
+      "timestamp": "2026-10-14T09:38:35.597986+00:00"
+    },
+    {
+      "id": "4744d86b7518",
+      "tool": "doubao_tts",
+      "operation": "male technology narrator sample s4+s5",
+      "status": "completed",
+      "estimated_usd": 0.0008,
+      "reserved_usd": 0.0,
+      "actual_usd": 0.0008,
+      "timestamp": "2026-10-14T09:53:02.251566+00:00"
+    },
+    {
+      "id": "8c51f11e1072",
+      "tool": "doubao_tts",
+      "operation": "younger male Xiaotian sample s4+s5",
+      "status": "completed",
+      "estimated_usd": 0.0008,
+      "reserved_usd": 0.0,
+      "actual_usd": 0.0008,
+      "timestamp": "2026-10-14T09:55:57.889447+00:00"
+    },
+    {
+      "id": "51816602cb0b",
+      "tool": "doubao_tts",
+      "operation": "approved Xiaotian narration s1",
+      "status": "completed",
+      "estimated_usd": 0.0002,
+      "reserved_usd": 0.0,
+      "actual_usd": 0.0002,
+      "timestamp": "2026-10-14T09:58:38.606722+00:00"
+    },
+    {
+      "id": "08e41d9cdfcb",
+      "tool": "doubao_tts",
+      "operation": "approved Xiaotian narration s2",
+      "status": "completed",
+      "estimated_usd": 0.0005,
+      "reserved_usd": 0.0,
+      "actual_usd": 0.0005,
+      "timestamp": "2026-10-14T09:58:43.385051+00:00"
+    },
+    {
+      "id": "75eb9bb1ddbd",
+      "tool": "doubao_tts",
+      "operation": "approved Xiaotian narration s3",
+      "status": "completed",
+      "estimated_usd": 0.0005,
+      "reserved_usd": 0.0,
+      "actual_usd": 0.0005,
+      "timestamp": "2026-10-14T09:58:46.023891+00:00"
+    },
+    {
+      "id": "18a5b2f86a24",
+      "tool": "doubao_tts",
+      "operation": "approved Xiaotian narration s4",
+      "status": "completed",
+      "estimated_usd": 0.0004,
+      "reserved_usd": 0.0,
+      "actual_usd": 0.0004,
+      "timestamp": "2026-10-14T09:58:51.166108+00:00"
+    },
+    {
+      "id": "aedf11ac41a6",
+      "tool": "doubao_tts",
+      "operation": "approved Xiaotian narration s5",
+      "status": "completed",
+      "estimated_usd": 0.0003,
+      "reserved_usd": 0.0,
+      "actual_usd": 0.0003,
+      "timestamp": "2026-10-14T09:58:56.152849+00:00"
+    }
+  ]
+}

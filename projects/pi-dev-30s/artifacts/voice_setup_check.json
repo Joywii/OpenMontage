@@ -1,0 +1,37 @@
+{
+  "provider": "doubao",
+  "tool": "doubao_tts",
+  "credential_detected": true,
+  "registry_status": "available",
+  "authentication_verified": true,
+  "quota_verified": true,
+  "quota_scope": "This single sample succeeded; remaining account quota is unknown.",
+  "generation_calls": 1,
+  "network_blocked_attempts": 1,
+  "spend_usd": 0.0007,
+  "spend_basis": "Tool estimate; provider response contained no billing usage.",
+  "result": {
+    "path": "projects/pi-dev-30s/assets/audio/doubao_sample_v1.mp3",
+    "metadata_path": "projects/pi-dev-30s/assets/audio/doubao_sample_v1.mp3.json",
+    "duration_seconds": 9.048,
+    "decode_check": "passed",
+    "sample_rate": 24000,
+    "peak_dbfs": -8.4,
+    "voice_review": "approved_by_user",
+    "timestamp_warning": "First sentence word alignment returns a different final word than the input. Review audible pronunciation and align final captions to approved script rather than blindly copying recognized words."
+  },
+  "proposed_sample": {
+    "resource_id": "seed-tts-2.0",
+    "voice_id": "zh_female_vv_uranus_bigtts",
+    "speech_rate": 0,
+    "target_seconds": "10-15",
+    "text": "认识 Pi，一个运行在终端里的 AI 搭档。给它一个目标，它就能读取文件、执行命令，完成多步任务。",
+    "tool_estimate_usd": 0.0007,
+    "approval": "approved_by_user_for_one_sample"
+  },
+  "full_narration_estimate": {
+    "assumed_characters": 150,
+    "tool_estimate_usd": 0.0023,
+    "pricing_note": "Local tool estimate only, not a verified current provider quote. Actual billing follows the provider account."
+  }
+}

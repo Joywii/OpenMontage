@@ -1,0 +1,107 @@
+{
+  "version": "1.0",
+  "output_path": "/Users/bytedance/MBoxWorkspace/OpenMontage/projects/pi-dev-30s/renders/pi-dev-30s.mp4",
+  "status": "pass",
+  "checks": {
+    "technical_probe": {
+      "valid_container": true,
+      "duration_seconds": 30.06,
+      "resolution": "1080x1920",
+      "fps": 30.0,
+      "has_audio": true,
+      "codec": "h264",
+      "file_size_bytes": 2329758,
+      "issues": []
+    },
+    "visual_spotcheck": {
+      "frames_sampled": 12,
+      "frame_paths": [
+        "/Users/bytedance/MBoxWorkspace/OpenMontage/projects/pi-dev-30s/renders/review/frame_0000.png",
+        "/Users/bytedance/MBoxWorkspace/OpenMontage/projects/pi-dev-30s/renders/review/frame_0001.png",
+        "/Users/bytedance/MBoxWorkspace/OpenMontage/projects/pi-dev-30s/renders/review/frame_0002.png",
+        "/Users/bytedance/MBoxWorkspace/OpenMontage/projects/pi-dev-30s/renders/review/frame_0003.png",
+        "/Users/bytedance/MBoxWorkspace/OpenMontage/projects/pi-dev-30s/renders/review/frame_0004.png",
+        "/Users/bytedance/MBoxWorkspace/OpenMontage/projects/pi-dev-30s/renders/review/frame_0005.png",
+        "/Users/bytedance/MBoxWorkspace/OpenMontage/projects/pi-dev-30s/renders/review/frame_0006.png",
+        "/Users/bytedance/MBoxWorkspace/OpenMontage/projects/pi-dev-30s/renders/review/frame_0007.png",
+        "/Users/bytedance/MBoxWorkspace/OpenMontage/projects/pi-dev-30s/renders/review/frame_0008.png",
+        "/Users/bytedance/MBoxWorkspace/OpenMontage/projects/pi-dev-30s/renders/review/frame_0009.png",
+        "/Users/bytedance/MBoxWorkspace/OpenMontage/projects/pi-dev-30s/renders/review/workflow-final.png",
+        "/Users/bytedance/MBoxWorkspace/OpenMontage/projects/pi-dev-30s/renders/review/app-final.png"
+      ],
+      "black_frames_detected": false,
+      "broken_overlays": false,
+      "missing_assets": false,
+      "unreadable_text": false,
+      "issues": []
+    },
+    "audio_spotcheck": {
+      "narration_present": true,
+      "music_present": true,
+      "unexpected_silence": false,
+      "clipping_detected": false,
+      "mix_intelligible": true,
+      "issues": [
+        "Voice and mix were approved before render; rendered audio checked against approved waveform, not independently transcribed."
+      ]
+    },
+    "promise_preservation": {
+      "delivery_promise_honored": true,
+      "silent_downgrade_detected": false,
+      "runtime_swap_detected": false,
+      "issues": [],
+      "renderer_family_used": "product-reveal",
+      "render_runtime_used": "remotion",
+      "runtime_swap_check": "ok — proposal and edit agree (proposal_packet.production_plan.render_runtime)"
+    },
+    "subtitle_check": {
+      "subtitles_expected": true,
+      "subtitles_present": true,
+      "coverage_ratio": 1,
+      "timing_drift_detected": false,
+      "issues": []
+    },
+    "transcript_comparison": {
+      "transcript_matches_script": null,
+      "word_accuracy": null,
+      "issues": [
+        "Independent ASR attempted but unavailable: faster-whisper not installed. Provider sentence match is not an independent transcription."
+      ]
+    },
+    "atelier": {
+      "stock_reuse_detected": false,
+      "offending_imports": [],
+      "art_direction_declared": true,
+      "art_direction": "projects/pi-dev-30s/art-direction.md",
+      "issues": []
+    }
+  },
+  "issues_found": [
+    "Independent rendered-audio transcription unavailable; human listening remains recommended.",
+    "Music is Content ID registered and may trigger platform claims."
+  ],
+  "recommended_action": "present_to_user",
+  "metadata": {
+    "review_result": "pass_with_disclosed_limitations",
+    "visual_review": "Viewed ten-frame contact sheet covering all scenes plus full-size workflow and app outcomes. Captions, disclosures and URL legible and unclipped. Sequential states visibly change; no still-slideshow substitution.",
+    "subtitle_detector_false_positive": "Tool checked for a subtitle stream/path and missed captions rasterized by the custom React component. Actual extracted frames visibly contain the expected captions.",
+    "audio_waveform_comparison": {
+      "method": "Decode approved WAV and MP4 audio to mono 16kHz, FFT cross-correlation, then Pearson comparison per scene",
+      "lag_seconds": 0.0426875,
+      "scene_correlations": [
+        0.994983,
+        0.993027,
+        0.993538,
+        0.993569,
+        0.993419
+      ],
+      "matched_duration_seconds": 30,
+      "peak_dbfs_original_stereo": -4.5,
+      "note": "AAC encoding delay about 1.3 frames; no cumulative drift or missing sections. Stereo upmix is lower per-channel gain, not missing speech."
+    },
+    "render_diagnostics": "Concurrent tabs timed out in requestAnimationFrame root callback. Single concurrency rendered all 900 frames successfully in 37.04s. Same installed Chrome, same Remotion atelier runtime; no shared tool edits.",
+    "temporary_config": "Saved to composition/render.config.ts; temporary composer-root config removed after render.",
+    "cost_estimated_usd": 0.0061,
+    "external_publication": false
+  }
+}

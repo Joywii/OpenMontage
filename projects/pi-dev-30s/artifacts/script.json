@@ -1,0 +1,165 @@
+{
+  "version": "1.0",
+  "title": "用 Pi，构建你的 AI 工具",
+  "total_duration_seconds": 30,
+  "voice_performance": {
+    "performance_intent": "年轻、清晰、可信的普通话男声，像向开发者展示三个可实现的工具成果，不做夸张销售播报。",
+    "pacing_profile": "conversational",
+    "energy_curve": "开场轻提问；编程助手具体而有行动感；自动化段节奏连贯；应用集成段稍放缓；结尾坚定收束。",
+    "pause_policy": "以逗号、顿号和句号引导语义停顿，不发送未经验证的 SSML。各段尾部保留画面理解时间；停顿目标用于剪辑，不机械叠加到模型自然停顿上。",
+    "sample_section_id": "s4",
+    "provider_notes": {
+      "doubao": "使用用户最新批准的 doubao_tts / seed-tts-2.0 / zh_male_taocheng_uranus_bigtts（小天2.0），speech_rate=0，sample_rate=24000，enable_timestamp=true。生成必须使用各段 delivery_cues.provider_text；Pi 在合成文本中写作同音字派，字幕和画面保留 Pi。不要把 speaker_directions 当作旁白发给模型，不假设模型支持单词强调或 SSML。",
+      "sample_approval": "小天2.0同音色同语速样本已获批准，路径 projects/pi-dev-30s/assets/audio/male_tech_sample_v2.mp3，实测 8.4 秒，内容为 s4+s5。用户已授权生成完整配音。音色、模型或语速如再次变更，必须重新试听确认。",
+      "duration_policy": "30 秒为用户指定总长。先依据实际音频和词级时间戳校验，再微调画面留白；若旁白仍超长，回退缩稿，不擅自加速或截断音频。"
+    }
+  },
+  "sections": [
+    {
+      "id": "s1",
+      "label": "Hook: 构建什么",
+      "text": "用 Pi，你能构建什么？",
+      "start_seconds": 0,
+      "end_seconds": 2.5,
+      "speaker_directions": "简短提问，重心落在构建什么；Pi 读作 pai，问题之后留出理解时间。",
+      "delivery_cues": {
+        "pace": "conversational",
+        "energy": "好奇、直接",
+        "emphasis_words": ["构建什么"],
+        "pause_after_seconds": 0.35,
+        "delivery_note": "问句不拖长尾音。停顿目标含自然尾部停顿。",
+        "provider_text": "用派，你能构建什么？"
+      },
+      "enhancement_cues": [
+        {"type": "animation", "description": "Pi 核心出现，三个待展开的成果轮廓围绕它建立连接；主标题只显示用 Pi，你能构建什么？", "timestamp_seconds": 0.3}
+      ],
+      "pronunciation_guides": [{"word": "Pi", "phonetic": "pai /paɪ/，合成文本用派，屏幕仍用 Pi"}],
+      "source_ref": "https://pi.dev/docs/latest"
+    },
+    {
+      "id": "s2",
+      "label": "Build 1: 专属编程助手",
+      "text": "加入团队规范、专属技能和工具，构建会按你的工作方式改代码的编程助手。",
+      "start_seconds": 2.5,
+      "end_seconds": 10.5,
+      "speaker_directions": "规范、技能、工具三个短语轻分开，后半句一气读完；把编程助手作为第一个明确成果。",
+      "delivery_cues": {
+        "pace": "conversational",
+        "energy": "具体、有行动感",
+        "emphasis_words": ["你的工作方式", "编程助手"],
+        "pause_after_seconds": 0.25,
+        "delivery_note": "顿号是轻停顿而非逐项播报；不暗示团队规则可以保证模型永不出错。",
+        "provider_text": "加入团队规范、专属技能和工具，构建会按你的工作方式改代码的编程助手。"
+      },
+      "enhancement_cues": [
+        {"type": "animation", "description": "团队规范、Skills、扩展工具汇入 Pi，展开专属编程助手及代码差异，突出有待审阅的修改。右上保留应用示意标签。", "timestamp_seconds": 2.7},
+        {"type": "overlay", "description": "成果标题专属编程助手；辅助小字指令 / Skills / 扩展工具，避免把不同定制机制说成同一项内置功能。", "timestamp_seconds": 6}
+      ],
+      "pronunciation_guides": [],
+      "source_ref": "https://pi.dev/docs/latest/extensions ; research_brief.data_points[3] ; proposal_packet.metadata.build_focus_sources[0]"
+    },
+    {
+      "id": "s3",
+      "label": "Build 2: 自动化工作流",
+      "text": "接入脚本和开发流水线，自动审查代码、汇总变更，让重复工作交给流程。",
+      "start_seconds": 10.5,
+      "end_seconds": 18,
+      "speaker_directions": "在接入后轻分句，审查代码和汇总变更保持同等重音；流程一词收稳。",
+      "delivery_cues": {
+        "pace": "conversational",
+        "energy": "连贯、务实",
+        "emphasis_words": ["接入", "审查代码", "汇总变更"],
+        "pause_after_seconds": 0.25,
+        "delivery_note": "自动化是集成后的工作流，不是 Pi 自带定时调度器。",
+        "provider_text": "接入脚本和开发流水线，自动审查代码、汇总变更，让重复工作交给流程。"
+      },
+      "enhancement_cues": [
+        {"type": "diagram", "description": "仓库变更经过外部脚本 / CI 触发节点进入 Pi CLI，再生成审查意见与变更摘要两份示意结果。保持应用示意标签。", "timestamp_seconds": 10.7},
+        {"type": "overlay", "description": "成果标题自动化工作流；清楚注明触发与调度由外部系统负责。不展示自动合并、审批保证或 JSON 事件流等于结构化业务结果。", "timestamp_seconds": 14}
+      ],
+      "pronunciation_guides": [],
+      "source_ref": "https://pi.dev/docs/latest/cli-integration ; proposal_packet.metadata.build_focus_sources[1]"
+    },
+    {
+      "id": "s4",
+      "label": "Build 3: 自己的 AI 应用",
+      "text": "还可以通过接口集成，把 Pi 接进自己的网页助手，或聊天机器人。",
+      "start_seconds": 18,
+      "end_seconds": 25,
+      "speaker_directions": "接口集成清楚读出，网页助手和聊天机器人是两个并列示例；不把集成条件吞掉。",
+      "delivery_cues": {
+        "pace": "measured",
+        "energy": "扩展可能性，但克制",
+        "emphasis_words": ["接口集成", "自己的"],
+        "pause_after_seconds": 0.35,
+        "delivery_note": "SDK、RPC 只出现在画面，不在旁白中逐字念缩写；Pi 读作 pai。",
+        "provider_text": "还可以通过接口集成，把派接进自己的网页助手，或聊天机器人。"
+      },
+      "enhancement_cues": [
+        {"type": "animation", "description": "同一个 Pi 核心经 TypeScript SDK / RPC 连接自定义网页助手；对话区显示任务请求与工具执行状态，随后出现聊天机器人形态。全程标记应用示意。", "timestamp_seconds": 18.2},
+        {"type": "overlay", "description": "成果标题自己的 AI 应用；显著小字需自行集成界面、渠道与权限。不能伪装成 Pi 已内置的网页端或机器人渠道。", "timestamp_seconds": 21}
+      ],
+      "pronunciation_guides": [{"word": "Pi", "phonetic": "pai /paɪ/，合成文本用派，屏幕仍用 Pi"}],
+      "source_ref": "https://pi.dev/docs/latest/sdk ; https://pi.dev/docs/latest/cli-integration ; proposal_packet.metadata.build_focus_sources[2]"
+    },
+    {
+      "id": "s5",
+      "label": "Landing: 构建基础",
+      "text": "Pi 不只是助手，更是你构建 AI 工具的基础。",
+      "start_seconds": 25,
+      "end_seconds": 30,
+      "speaker_directions": "不只是后轻顿，更是稳稳推进；基础收束，不额外念网址。",
+      "delivery_cues": {
+        "pace": "measured",
+        "energy": "坚定、清晰",
+        "emphasis_words": ["不只是", "构建", "基础"],
+        "pause_after_seconds": 0.35,
+        "delivery_note": "URL 作为画面 CTA 保持至少两秒，不占用口播预算。",
+        "provider_text": "派不只是助手，更是你构建 AI 工具的基础。"
+      },
+      "enhancement_cues": [
+        {"type": "animation", "description": "三类成果在 Pi 核心周围汇聚：专属编程助手 / 自动化工作流 / 自己的 AI 应用。不要退回孤立功能词列表。", "timestamp_seconds": 25.2},
+        {"type": "overlay", "description": "从文档开始构建：pi.dev/docs/latest。网址从 26 秒至 30 秒稳定可读；底部清楚提示工具按进程权限运行，请审阅执行结果。", "timestamp_seconds": 26}
+      ],
+      "pronunciation_guides": [{"word": "Pi", "phonetic": "pai /paɪ/，合成文本用派，屏幕仍用 Pi"}, {"word": "AI", "phonetic": "English letter names A-I"}],
+      "source_ref": "https://pi.dev/docs/latest/sdk ; https://pi.dev/docs/latest/extensions ; https://pi.dev/docs/latest/security ; research_brief.data_points[5]"
+    }
+  ],
+  "metadata": {
+    "language": "zh-CN",
+    "proposal_concept_id": "c5",
+    "approval_status": "approved",
+    "approval_evidence": "用户在完整旁白展示后回复：继续吧。本次确认脚本，后续关卡仍需单独确认。",
+    "scope": "Script only. No narration generation, scene assets or render executed.",
+    "narration_han_characters": 107,
+    "narration_characters_including_spaces_punctuation_latin": 135,
+    "section_han_counts": {"s1": 7, "s2": 31, "s3": 29, "s4": 25, "s5": 15},
+    "timing_estimate": {
+      "basis": "Empirical Mandarin sample, not English words per minute. Sample is 36 Han characters, Pi once and AI once, 49 total text characters including spaces and punctuation, lasting 9.048 s.",
+      "sample_han_characters": 36,
+      "sample_duration_seconds": 9.048,
+      "sample_han_per_second_including_latin_and_pauses": 3.979,
+      "estimated_spoken_units": 112,
+      "spoken_unit_assumption": "Each Han character is approximately one syllable; three Pi occurrences add 3 syllables and AI adds 2. Sample approximates 39 syllables. This is a pacing estimate, not phonetic alignment.",
+      "sample_equivalent_estimate_seconds": 25.983,
+      "practical_expected_range_seconds": [26, 29],
+      "warning": "Estimate includes pauses present in the reference sample but cannot predict this script's phrasing exactly. Per-section timecodes are planning slots only; assets and edit must use actual audio timestamps. Do not claim a generated 30-second voiceover yet.",
+      "planned_slots_seconds": {"s1": 2.5, "s2": 8, "s3": 7.5, "s4": 7, "s5": 5},
+      "refinement_from_proposal": "Opening shortened by 0.5 s and coding-assistant slot expanded to 8 s; close begins at 25 s to avoid rushing the takeaway. Total remains 30 s."
+    },
+    "caption_policy": "Use approved section text for wording, including Pi spelling. Align semantic phrases against verified provider timing and audible speech. Do not blindly copy provider-recognized words; previous sample contained one alignment-text mismatch.",
+    "visual_direction": "Retain approved atelier warm ivory, ink and leaf-green design. Show concrete tool outcomes, one main message per screen, illustrative interfaces explicitly labeled. SDK/RPC terminology lives on screen rather than crowding Mandarin narration.",
+    "claim_boundaries": [
+      "Custom coding assistants are a construction direction using instructions, Skills and extensions; generated changes still require review.",
+      "Code review and change summaries are CLI-integrated workflows, not built-in scheduling or automatic approval guarantees.",
+      "Web assistants and chatbots are example integrations using SDK/RPC, not bundled official Pi applications.",
+      "Do not imply Pi's project trust is an execution sandbox."
+    ],
+    "review": {
+      "decision": "pass_with_warnings",
+      "critical_findings": 0,
+      "scores_out_of_5": {"hook": 4, "duration_budget": 4, "narrative_flow": 4, "enhancement_density": 5, "voice_performance": 4, "jargon_management": 5, "climax_payoff": 4, "cta": 4},
+      "warnings": ["Narration durations are estimates until TTS is generated and probed.", "Pi homophone substitution must be audibly verified, and subtitles must preserve Pi.", "Music track and paid generation budget remain for approval before asset generation; this script does not authorize either."]
+    }
+  }
+}

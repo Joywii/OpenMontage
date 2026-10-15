@@ -1,0 +1,155 @@
+{
+  "version": "1.0",
+  "project_id": "pi-dev-30s",
+  "pipeline_type": "animated-explainer",
+  "stage": "edit",
+  "status": "completed",
+  "timestamp": "2026-10-14T10:16:31.846138+00:00",
+  "checkpoint_policy": "guided",
+  "human_approval_required": false,
+  "human_approved": false,
+  "artifacts": {
+    "edit_decisions": {
+      "version": "1.0",
+      "render_runtime": "remotion",
+      "renderer_family": "product-reveal",
+      "composition_mode": "atelier",
+      "cuts": [
+        {
+          "id": "cut-1",
+          "source": "bespoke-source",
+          "in_seconds": 0,
+          "out_seconds": 2.5,
+          "layer": "primary",
+          "transition_in": "cut",
+          "transition_out": "cut",
+          "reason": "Opening question with three outcome traces; exact title serves as opening subtitle."
+        },
+        {
+          "id": "cut-2",
+          "source": "bespoke-source",
+          "in_seconds": 2.5,
+          "out_seconds": 10.5,
+          "layer": "primary",
+          "transition_in": "cut",
+          "transition_out": "cut",
+          "reason": "Custom coding assistant: rules and skills feed a code diff awaiting review."
+        },
+        {
+          "id": "cut-3",
+          "source": "bespoke-source",
+          "in_seconds": 10.5,
+          "out_seconds": 18,
+          "layer": "primary",
+          "transition_in": "cut",
+          "transition_out": "cut",
+          "reason": "External scripts and CI trigger Pi CLI and generate review and change reports."
+        },
+        {
+          "id": "cut-4",
+          "source": "bespoke-source",
+          "in_seconds": 18,
+          "out_seconds": 25,
+          "layer": "primary",
+          "transition_in": "cut",
+          "transition_out": "cut",
+          "reason": "Custom app UI with SDK/RPC connection and integration disclaimer."
+        },
+        {
+          "id": "cut-5",
+          "source": "bespoke-source",
+          "in_seconds": 25,
+          "out_seconds": 30,
+          "layer": "primary",
+          "transition_in": "cut",
+          "transition_out": "cut",
+          "reason": "Three build outcomes converge on Pi foundation; docs URL held for four seconds."
+        }
+      ],
+      "audio": {
+        "narration": {
+          "segments": [
+            {
+              "asset_id": "narration-s1",
+              "start_seconds": 0,
+              "end_seconds": 2.04
+            },
+            {
+              "asset_id": "narration-s2",
+              "start_seconds": 2.5,
+              "end_seconds": 8.524
+            },
+            {
+              "asset_id": "narration-s3",
+              "start_seconds": 10.5,
+              "end_seconds": 16.548
+            },
+            {
+              "asset_id": "narration-s4",
+              "start_seconds": 18,
+              "end_seconds": 22.848
+            },
+            {
+              "asset_id": "narration-s5",
+              "start_seconds": 25,
+              "end_seconds": 28.648
+            }
+          ]
+        },
+        "music": {
+          "asset_id": "music-candidate",
+          "volume": 0.12,
+          "fade_out_seconds": 0.6,
+          "ducking": {
+            "enabled": true,
+            "attack_ms": 100,
+            "release_ms": 450
+          }
+        },
+        "sfx": []
+      },
+      "subtitles": {
+        "enabled": true,
+        "style": "phrase",
+        "source": "artifacts/audio_timing.json",
+        "font": "Heiti SC",
+        "font_size": 48,
+        "color": "#18201C",
+        "position": "bottom-center"
+      },
+      "bespoke": {
+        "entry": "projects/pi-dev-30s/composition/index.tsx",
+        "composition_id": "PiBuild30",
+        "art_direction": "projects/pi-dev-30s/art-direction.md",
+        "props_path": "/Users/bytedance/MBoxWorkspace/OpenMontage/projects/pi-dev-30s/artifacts/render_props.json",
+        "public_dir": "/Users/bytedance/MBoxWorkspace/OpenMontage/projects/pi-dev-30s/public",
+        "scale": 1,
+        "crf": 18,
+        "concurrency": 1
+      },
+      "metadata": {
+        "duration_seconds": 30,
+        "fps": 30,
+        "width": 1080,
+        "height": 1920,
+        "proposal_render_runtime": "remotion",
+        "audio_embedding": "Remotion Audio embeds the exact user-approved 30-second soundtrack WAV. No external muxing or duplicate narration; segment/music entries document its sources.",
+        "approved_soundtrack": "assets/audio/xiaotian_soundtrack_preview.wav",
+        "loudnorm_target": -16,
+        "caption_basis": "Doubao word timestamps grouped by semantic phrase; Pi spelling restored. Opening title replaces duplicate caption.",
+        "review": {
+          "timeline_coverage": "0-30 seconds without gaps or overlaps",
+          "asset_references": "All IDs resolve",
+          "voice": "Approved Xiaotian 2.0 at speech_rate 0",
+          "motion": "Project-specific frame-driven animation, not stills"
+        },
+        "qa_limitation": "Independent rendered-audio transcription unavailable because faster-whisper is not installed. Report this limitation; do not treat provider timestamps as independent ASR."
+      }
+    }
+  },
+  "metadata": {
+    "runtime": "remotion",
+    "concurrency": 1,
+    "review": "pass"
+  }
+}

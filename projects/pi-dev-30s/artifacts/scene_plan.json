@@ -1,0 +1,334 @@
+{
+  "version": "1.0",
+  "style_playbook": "custom-build-with-pi-atelier",
+  "scenes": [
+    {
+      "id": "scene-1",
+      "type": "animation",
+      "start_seconds": 0,
+      "end_seconds": 2.5,
+      "script_section_id": "s1",
+      "description": "Negative-space question: a large exact-text question 用 Pi，你能构建什么？ occupies the left upper-middle of warm ivory. Three tiny unfinished glyphs (diff bracket, report fold, speech-tail) appear along the bottom of the composition, not around a Pi hub. Bespoke typography and vector strokes, no stock template.",
+      "framing": "Wide editorial layout; question at x=96,y=520 within 888px width; motifs at y=1240. Background flat ivory with very faint ruled baseline. FG/MG/BG not physical depth; flat 2D layers.",
+      "movement": "0-0.3s question rises 24px with eased settling; 0.6-1.8s three strokes draw sequentially; 1.8-2.5s stable reading hold. No virtual camera.",
+      "transition_in": "direct opening",
+      "transition_out": "match-cut from diff bracket to code gutter",
+      "overlay_notes": "Question is exact spoken line, so suppress duplicate accessibility subtitle only for s1. No watermark or decorative HUD.",
+      "shot_language": {
+        "shot_size": "wide",
+        "camera_movement": "static"
+      },
+      "shot_intent": "Pose a build-outcome question before any feature names; leave breathing room before evidence.",
+      "narrative_role": "introduce_subject",
+      "information_role": "There are three concrete kinds of tools to build.",
+      "texture_keywords": [
+        "warm ivory",
+        "crisp ink",
+        "quiet ruled baseline"
+      ],
+      "required_assets": [
+        {
+          "type": "manual_composition_source",
+          "source": "provided",
+          "description": "TO AUTHOR, not an existing asset: projects/pi-dev-30s/composition/Composition.tsx scene 1, hand-written Remotion text/SVG with ivory #F3F0E7, ink #18201C, leaf #4B7958. No image generation or stock scene import."
+        }
+      ]
+    },
+    {
+      "id": "scene-2",
+      "type": "screen_recording",
+      "start_seconds": 2.5,
+      "end_seconds": 10.5,
+      "script_section_id": "s2",
+      "description": "Simulated bespoke code-diff UI, NOT a recording or actual Pi interface. A close crop on src/name.ts shows - return name.trim(); becoming + return name.trim() || '匿名'; then test expectation expect(displayName(' ')).toBe('匿名'). A slim upper rail shows 团队规范 / Skills / 扩展工具, separate mechanisms. Result status 修改待审阅, never automatic success or approval.",
+      "framing": "Close-up code pane dominates x=96..984,y=480..1260, dark ink field on ivory surround. Diff lines 42px minimum. One highlighted change at a time; no tiny IDE chrome.",
+      "movement": "2.5-4s customization rail appears in three staggered entries; 4-6s old line is struck through and replacement expands from its gutter; 6-8s test row writes in; 8-10.5s diff and 修改待审阅 hold. Subject animation only, no virtual camera.",
+      "transition_in": "match-cut from question's bracket",
+      "transition_out": "code gutter line extends into workflow connector",
+      "overlay_notes": "Top title 专属编程助手 at y=240; 应用示意 always at top-right 36px. Accessibility captions at y=1510..1660; no duplicate full narration title. Mechanisms rail 40px and review status 40px.",
+      "shot_language": {
+        "shot_size": "close_up",
+        "camera_movement": "static"
+      },
+      "shot_intent": "Make customization tangible through one understandable code change rather than a feature list.",
+      "narrative_role": "deliver_payload",
+      "information_role": "Team instructions, Skills and tools can shape a coding assistant; review remains necessary.",
+      "texture_keywords": [
+        "matte ink editor",
+        "green addition rule",
+        "sharp monospace"
+      ],
+      "required_assets": [
+        {
+          "type": "manual_composition_source",
+          "source": "provided",
+          "description": "TO AUTHOR: projects/pi-dev-30s/composition/Composition.tsx scene 2; custom simulated diff with exact code in description. Hand-written React/SVG, no real screenshot claim. Review still projects/pi-dev-30s/snapshots/scene-2.png to be captured locally after approval."
+        }
+      ]
+    },
+    {
+      "id": "scene-3",
+      "type": "diagram",
+      "start_seconds": 10.5,
+      "end_seconds": 18,
+      "script_section_id": "s3",
+      "description": "Repository-to-report branching flow: 仓库变更 descends through 外部脚本 / CI and Pi CLI, then forks to two report sheets 审查意见 and 变更摘要. Example report lines are 空输入处理：建议检查 and 新增空名称回退. The branching process, not a central logo, is the primary subject. Hand-drawn-by-code Diagram Reveal, not a Mermaid screenshot or stock component.",
+      "framing": "Medium-wide vertical diagram at x=130..950,y=440..1290; top source then two side-by-side output sheets; 44px labels, 40px report lines with deliberate wrapping. All layers 2D, ivory base with green active path.",
+      "movement": "10.5-12s repository marker releases a change packet; 12-13.5s external trigger and CLI activate in sequence; 13.5-15s packet divides into review and summary; 15-18s report headings and one line each settle and hold. No looping decorative particles or virtual camera.",
+      "transition_in": "connector continuity from code gutter",
+      "transition_out": "hard cut on completed reports to chat request",
+      "overlay_notes": "自动化工作流 at y=240; 应用示意 at top-right. 触发与调度由外部系统负责 in 36px at y=1350. Semantic captions below at y=1510..1660. No built-in scheduler, guaranteed JSON business schema, or auto-merge claims.",
+      "shot_language": {
+        "shot_size": "medium_wide",
+        "camera_movement": "static"
+      },
+      "shot_intent": "Expose both external triggering and useful outputs so automation is concrete without overstating built-in abilities.",
+      "narrative_role": "deliver_payload",
+      "information_role": "CLI integration can produce review and summary workflows, with triggers supplied externally.",
+      "texture_keywords": [
+        "ivory paper",
+        "ink flow lines",
+        "leaf green active path"
+      ],
+      "required_assets": [
+        {
+          "type": "manual_composition_source",
+          "source": "provided",
+          "description": "TO AUTHOR: projects/pi-dev-30s/composition/Composition.tsx scene 3; custom SVG node paths, packet motion and report sheets. Review still snapshots/scene-3.png under project. No external diagram generator required."
+        }
+      ]
+    },
+    {
+      "id": "scene-4",
+      "type": "screen_recording",
+      "start_seconds": 18,
+      "end_seconds": 25,
+      "script_section_id": "s4",
+      "description": "Custom web-assistant UI is the subject, simulated and explicitly illustrative. User bubble 总结这次代码变更; tool-state row 正在读取仓库; reply 已整理审查建议与变更摘要. A thin lower interface strip TypeScript SDK / RPC explains integration. At 22s a small neighboring chat-bot bubble becomes the alternative channel, not a claim of an official Pi bot.",
+      "framing": "Medium crop at x=96..984,y=450..1270, open cream conversation surface with asymmetric message alignment; no enclosing editor window reused from scene 2. Interface strip under the conversation; all layers flat 2D.",
+      "movement": "18-19.5s user bubble slides 36px into place; 19.5-21s tool row advances from request to result; 21-22.5s assistant answer resolves; 22.5-23.5s alternative bot bubble arrives; 23.5-25s stable hold. No virtual camera or infinite typing spinner.",
+      "transition_in": "hard cut to distinct cream chat surface",
+      "transition_out": "chat bubble and prior outcome fragments converge into closing foundation",
+      "overlay_notes": "自己的 AI 应用 at y=240; 应用示意 always top-right. TypeScript SDK / RPC 40px; 需自行集成界面、渠道与权限 36px at y=1350. Captions at y=1510..1660, not full narration in the title.",
+      "shot_language": {
+        "shot_size": "medium",
+        "camera_movement": "static"
+      },
+      "shot_intent": "Show a useful app interaction while making the integration boundary legible.",
+      "narrative_role": "deliver_payload",
+      "information_role": "SDK or RPC can power custom web assistants and chatbots; UI, channels and permissions are application work.",
+      "texture_keywords": [
+        "cream conversation surface",
+        "ink message type",
+        "green tool status"
+      ],
+      "required_assets": [
+        {
+          "type": "manual_composition_source",
+          "source": "provided",
+          "description": "TO AUTHOR: projects/pi-dev-30s/composition/Composition.tsx scene 4; custom conversation UI with exact example strings, flat vector message shapes and interface strip. Review still snapshots/scene-4.png under project; no external UI recording or official branding asset."
+        }
+      ]
+    },
+    {
+      "id": "scene-5",
+      "type": "text_card",
+      "start_seconds": 25,
+      "end_seconds": 30,
+      "script_section_id": "s5",
+      "description": "Closing foundation convergence is the only Pi-core hero composition. Three tangible fragments (diff line, report sheet, message bubble) settle above a broad leaf-green foundation marked Pi. Exact heading 构建你的 AI 工具 and exact URL pi.dev/docs/latest are hand-typeset. Canonical text_card ensures accurate CTA, but this is bespoke source, never a stock TextCard template.",
+      "framing": "Wide centered foundation at y=1080 with three small outputs above it; heading y=440; URL y=1320; ivory field and generous negative space. Hero is the foundation relationship, not a repeated app panel.",
+      "movement": "25-26s fragments converge with restrained anticipation, easing and final settle; 26-30s URL completely stable; 26-27s foundation underline completes; 27-30s held payoff. No virtual camera.",
+      "transition_in": "outcome convergence",
+      "transition_out": "hold to final frame; audio fade only",
+      "overlay_notes": "Heading differs from narration; accessibility captions remain at y=1510..1630. Safety note 工具按进程权限运行，请审阅执行结果 at y=1690 in 36px, split into two lines if required. URL 48px, held 4 seconds. No unverified logo mimicry.",
+      "shot_language": {
+        "shot_size": "wide",
+        "camera_movement": "static"
+      },
+      "shot_intent": "Resolve three build examples into one memorable foundation and a readable next action.",
+      "narrative_role": "call_to_action",
+      "information_role": "Pi can be a foundation for your own AI tools; consult docs and review tool execution.",
+      "hero_moment": true,
+      "texture_keywords": [
+        "solid leaf-green foundation",
+        "ivory negative space",
+        "exact ink lettering"
+      ],
+      "required_assets": [
+        {
+          "type": "manual_composition_source",
+          "source": "provided",
+          "description": "TO AUTHOR: projects/pi-dev-30s/composition/Composition.tsx scene 5; bespoke convergence and exact CTA typography. Review still snapshots/scene-5.png under project. No generated exact-text image."
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "approval_status": "approved",
+    "approval_evidence": "用户回复好的，确认分镜、制作完整配音与预览、0.05美元预算；不包含资产审阅及其后续关卡。",
+    "media_profile": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "duration_seconds": 30,
+      "duration_frames": 900
+    },
+    "render_runtime": "remotion",
+    "composition_mode": "atelier",
+    "renderer_family": "product-reveal",
+    "frame_ranges_end_exclusive": {
+      "scene-1": [
+        0,
+        75
+      ],
+      "scene-2": [
+        75,
+        315
+      ],
+      "scene-3": [
+        315,
+        540
+      ],
+      "scene-4": [
+        540,
+        750
+      ],
+      "scene-5": [
+        750,
+        900
+      ]
+    },
+    "five_aspect_contract": {
+      "subject": "Each description starts with its unique primary visual subject and exact example content.",
+      "subject_motion": "Each movement field gives ordered global-time actions and reading holds.",
+      "scene": "All are designed 2D spaces, not physical locations; POV is orthographic front view, time of day not applicable. Background/setting is in framing; overlays are separately in overlay_notes.",
+      "spatial_framing": "Each framing specifies scale, grid position, layer/depth treatment and text area. No physical camera height.",
+      "camera": "N/A for all five scenes: Remotion native 2D composition, no virtual camera, lens, DoF, camera angle or physical lighting. Playback is 1x, crisp flat focus, frame-locked and steady. shot_language shot_size is editorial scale, camera_movement static describes no camera, not absence of subject animation."
+    },
+    "art_direction": {
+      "palette": {
+        "ivory": "#F3F0E7",
+        "ink": "#18201C",
+        "leaf": "#4B7958"
+      },
+      "typography": "Chinese editorial display face paired with a legible Chinese sans for UI/captions and monospace code. Verify locally installed font coverage/license before asset authoring; do not silently download fonts.",
+      "safe_area": {
+        "left": 96,
+        "right": 96,
+        "top": 180,
+        "bottom": 180
+      },
+      "font_px": {
+        "hero": 84,
+        "section_title": 64,
+        "body": 44,
+        "code": 42,
+        "captions": 48,
+        "disclosures": 36,
+        "url": 48
+      },
+      "motion": "Meaning-bearing stroke reveals, diff replacement, causal packet branching and request-result transitions. Controlled ease-out, ease-in-out and restrained spring settle; no meaningless continuous motion.",
+      "signature_device": "Pi foundation convergence reserved for scene-5 only.",
+      "taste_dials": {
+        "visual_variance": 6,
+        "motion_intensity": 5,
+        "information_density": 3
+      }
+    },
+    "enhancement_cue_refinement": "Approved narration unchanged. Refine original repeated Pi-core enhancement cues: opener becomes a question/three outcome traces; coding rail feeds the concrete diff; chat scene uses a slim integration strip rather than another hub. All original informational cues preserved, but core convergence reserved for closing to prevent hero-component repetition. This detailed visual refinement awaits scene-plan approval.",
+    "caption_policy": "Accessibility subtitles use approved script text and Pi spelling, aligned after actual TTS. Maximum two semantic lines, 48px, within safe area; no word-by-word bounce. s1 uses the exact question as its sole subtitle/title, suppressing a second copy. Other headings name outcomes, never repeat full narration. UI example text is not spoken narration.",
+    "asset_plan": {
+      "manual_source": "projects/pi-dev-30s/composition/Composition.tsx (planned, not yet created)",
+      "review_stills": "projects/pi-dev-30s/snapshots/scene-{1..5}.png (one local preview per distinct scene, before assets approval)",
+      "narration": {
+        "tool": "doubao_tts",
+        "provider": "doubao",
+        "resource_id": "seed-tts-2.0",
+        "voice_id": "zh_male_taocheng_uranus_bigtts",
+        "speech_rate": 0,
+        "enable_timestamp": true,
+        "planned_paths": "projects/pi-dev-30s/assets/audio/xiaotian_s{1..5}.mp3",
+        "status": "Xiaotian sample approved; five segments generated, measured and caption-aligned; complete mix pending asset review"
+      },
+      "music": {
+        "tool": "pixabay_music",
+        "status": "search path approved in proposal; actual track, download and license not verified or approved",
+        "planned_path": "projects/pi-dev-30s/assets/music/background.mp3",
+        "mix": "instrumental light electronic, duck under voice; no unilateral omission or replacement"
+      },
+      "composition": {
+        "tool": "video_compose",
+        "provider": "local",
+        "mode": "atelier",
+        "status": "full render only after assets gate"
+      },
+      "required_asset_source_semantics": "source=provided denotes manually authored project-source deliverable to be provided at assets stage, not existing supplied media. Every such entry explicitly says TO AUTHOR. No image/video provider generation required."
+    },
+    "reference_status": {
+      "source_basis": [
+        "https://pi.dev/docs/latest/extensions",
+        "https://pi.dev/docs/latest/cli-integration",
+        "https://pi.dev/docs/latest/sdk",
+        "https://pi.dev/docs/latest/security"
+      ],
+      "visual_reference_attempt": "Parent attempted search_service web_run; tool returned isError true and no content. No fresh actual UI or brand inspection claimed.",
+      "pending": "Inspect official UI/brand references before assets authoring; keep all constructed interfaces marked 应用示意 and do not claim them as screenshots."
+    },
+    "scene_distinctness": {
+      "primary_subjects": [
+        "negative-space question",
+        "concrete code diff",
+        "branching repository/report process",
+        "custom chat conversation",
+        "Pi build foundation"
+      ],
+      "first_frames": [
+        "ivory question with empty lower field",
+        "dark code line close crop",
+        "vertical repo source and unfinished branch",
+        "cream conversation request",
+        "outcome fragments above broad green base"
+      ],
+      "any_shared_primary_subject": false,
+      "signature_device_occurrences": 1
+    },
+    "timing_policy": "Planning slots only until approved TTS is synthesized and measured. Maintain total 900 frames; align within slots using actual speech, never silently change voice rate or approved narration. If narration cannot fit, surface timing issue before re-recording or changing duration.",
+    "stage_scope": "Plan only. No generation, asset authoring, paid call, full render, or checkpoint executed by scene director.",
+    "automated_checks": {
+      "schema": "PASS",
+      "slideshow_risk": {
+        "average": 0.25,
+        "verdict": "strong",
+        "weak_motion": 1.5,
+        "all_other_dimensions": 0
+      },
+      "variation_checker": {
+        "score": 1.2,
+        "verdict": "strong",
+        "violations": [
+          "5/5 scenes are static or unspecified movement.",
+          "Only 0 unique lighting setups across 5 scenes."
+        ],
+        "interpretation": "Camera/lighting heuristics target cinematography. These native 2D scenes deliberately have no camera or physical lighting; purposeful subject motion and distinct compositions are specified rather than fabricating camera movement to improve scores."
+      }
+    },
+    "review": {
+      "decision": "pass_with_warnings",
+      "scores_out_of_5": {
+        "visual_storytelling": 5,
+        "script_alignment": 5,
+        "technique_variety": 4,
+        "playbook_fidelity": 5,
+        "asset_feasibility": 4,
+        "pacing": 4
+      },
+      "warnings": [
+        "Actual TTS timing remains unverified.",
+        "Music license and track approval pending; paid narration budget pending.",
+        "Official visual reference inspection pending after search failure.",
+        "Static-camera/lighting heuristics are not literal failure of purposeful 2D subject animation."
+      ]
+    }
+  }
+}

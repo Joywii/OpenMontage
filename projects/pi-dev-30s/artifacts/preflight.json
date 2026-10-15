@@ -1,0 +1,39 @@
+{
+  "project_id": "pi-dev-30s",
+  "pipeline": "animated-explainer",
+  "status": "blocked",
+  "checked_at_local": "2026-10-14",
+  "request": {"duration_seconds": 30, "source_url": "https://pi.dev/docs/latest", "language_recommendation": "zh-CN"},
+  "composition_runtimes": {"remotion": true, "ffmpeg": true, "hyperframes": false},
+  "capabilities": {
+    "tts": {"configured": 1, "total": 13},
+    "image_generation": {"configured": 0, "total": 23},
+    "video_generation": {"configured": 0, "total": 31},
+    "music_generation": {"configured": 0, "total": 5},
+    "music_search": {"configured": 1, "total": 2, "available": ["pixabay_music"]},
+    "video_post": {"configured": 8, "total": 9},
+    "audio_processing": {"configured": 2, "total": 2}
+  },
+  "required_tools": {"tts_selector": "available", "image_selector": "unavailable", "video_compose": "available", "audio_mixer": "available"},
+  "runtime_warnings": ["hyperframes: npm package `hyperframes` not resolvable: timeout (5s) -- offline or slow registry"],
+  "board": "Server did not come up in time; non-blocking.",
+  "music_library": "No music_library directory exists.",
+  "recommended_visual_path": "Remotion atelier: bespoke terminal, file operations and workflow animation. No generated images or generated footage required; approval needed for adaptation of the default explainer asset requirements.",
+  "authoring_modes": [
+    {"name": "atelier", "recommended": true, "tradeoff": "Distinctive product-specific design; more authoring and iteration time."},
+    {"name": "templated", "recommended": false, "tradeoff": "Faster stock compositions, less distinctive."}
+  ],
+  "audio_options": [
+    {"choice": "configure_narration", "recommendation": "Connect Doubao Chinese TTS before narration generation; actual pricing and voice sample must be confirmed before spending."},
+    {"choice": "caption_only", "recommendation": "User must approve no narration. Local rendering has zero external generation cost."},
+    {"choice": "user_audio", "recommendation": "User may provide a narration track."}
+  ],
+  "music_options": ["Search Pixabay, verify the selected track license and download availability before use", "User supplies licensed music", "Configure a music generation API and approve cost", "No music"],
+  "setup_offers": [
+    {"capability": "tts", "tool": "doubao_tts", "configuration": "DOUBAO_SPEECH_API_KEY", "effort": "Credential configuration; never paste secret into chat"},
+    {"capability": "image/video/tts/music", "configuration": "FAL_KEY", "effort": "One shared provider credential unlocks multiple registry wrappers; optional and not needed for local motion graphics"},
+    {"capability": "composition", "tool": "hyperframes_compose", "effort": "Requires Node.js >= 22, FFmpeg and resolvable npm hyperframes package; current resolution timeout must be resolved"}
+  ],
+  "external_generation_spend_usd": 0,
+  "approval": "pending; no assets generated; no runtime or audio choice locked"
+}
